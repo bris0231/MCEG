@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Electricity &amp; Gas Inspection System</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
+<!-- Meta data--> 
+<!-- Load closure template scripts --> 
+	
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/soyutils.js"></script> 
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/wet-en.js"></script>
+
+<noscript>
+<!-- Write closure fall-back static file --> 
+<!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/refTop.html -->
+</noscript>
+<!-- Write closure template --> 
+<script>
+			document.write(wet.builder.refTop({
+				"isApplication": true
+			}));
+		</script>
+<link rel="stylesheet" href="css/mceg-01.css">
+<link rel="stylesheet" href="css/mceg-02.css">
+
+<script type="text/javascript">
+		function MM_goToURL() { //v3.0
+		  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+		  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+		}
+</script>	
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" rel="stylesheet">	
+</head>
+<body vocab="https://schema.org/" typeof="WebPage">
+<div id="def-top"> 
+  <!-- Write closure fall-back static file --> 
+  <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/custommenuTop-en.html --> 
+</div>
+<!-- Write closure template --> 
+<script>
+			var defTop = document.getElementById("def-top");
+			defTop.outerHTML = wet.builder.appTop({
+				"appName": [{"text": "Electricity &amp; Gas Inspection System", "href": "#"}],
+				"lngLinks": [{"lang": "fr", "href": "apptop_custommenu-fr.html", "text": "Français"}],
+				/*"appSettings": [{"href": "#"}],*/
+		        "signOut": [{"href": "#"}],
+				"menuPath": "menu/mceg-menu-006-en.html"
+			});
+		</script>
+<main role="main" property="mainContentOfPage" class="container"> 
+  
+  <!-- Page content START -->
+  <h1 property="name" id="wb-cont" class="mrgn-bttm-0">Plan inspection</h1>
+  <!--<div class="mceg-user-bg mrgn-tp-0">
+    <div class="container1">
+      <div class="mrgn-tp-0 mrgn-bttm-0 text-right"><span class="mceg-user-name1"><span class="fas fa-user-circle fa-lg mrgn-rght-sm"></span> Elizabeth Cotten</span></div>
+    </div>
+  </div>-->
+  <!-- Page title corresponds with title metadata data  --> 
+	
+  	<div class="mrgn-tp-md">
+	<ul class="nav nav-pills nav-justified">
+	<li><a href="001-CG-mceg-plan-inspection-pills-01-en.html">1. Inspection details</a></li>
+	<li class="active"><a href="001-CG-mceg-inspection-01-installation-en.html">2. Installation details</a></li>
+	<li><a href="001-CG-mceg-inspection-01-summary-01-en.html">3. Summary</a></li>
+	<li><a href="#">4. Certificate</a></li>	
+	<li><a href="#">5. Email</a></li>		
+	</ul>
+	</div>
+	
+	
+	<div class="mrgn-tp-lg">
+	<div class="row mrgn-tp-lg mrgn-bttm-lg">
+	<div class="col-md-12">
+		
+	<div class="panel panel-default mceg-card" id="001">
+			<header class="panel-heading">
+			<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Classification and measuring information</h2>
+			</header>	
+      
+      		<div class="panel-body mrgn-lft-md">	
+
+			<a id="classification"></a>
+			<div class="form-group">
+					<label for="classification_drawing_number" class="required"><span class="field-name">Classification - standard drawing number</span></label>
+					<input class="form-control" type="text" id="classification_drawing_number" name="classification_drawing_number" list="lassification_drawing_number_suggestions" placeholder="Start typing classification standard drawing number" size="45"/>
+					<datalist id="lassification_drawing_number_suggestions">
+					<!--[if lte IE 9]><select><![endif]-->
+					<option label="1201" value="1201"></option>	
+					<option label="1202" value="1202"></option>
+					<option label="1203" value="1203"></option>
+					<option label="1203-1" value="1203-1"></option>		
+					<option label="1204" value="1204"></option>	
+					<option label="1204-1" value="1204-1"></option>
+					<option label="1204-2" value="1204-2"></option>	
+					<option label="1204-3" value="1204-3"></option>		
+					<option label="3458" value="3458"></option>		
+					<!--[if lte IE 9]></select><![endif]-->
+					</datalist>
+			</div>
+				
+		   	<!--<div class="form-group">
+			<label for="classification_drawing_number" class="required"><span class="field-name">Classification - standard drawing number</span> <strong class="required">(required)</strong></label>
+			<input class="form-control" id="classification_drawing_number" name="classification_drawing_number" type="text" required="required" data-rule-minlength="4" />
+		  	</div>-->
+				
+			<div class="form-group">
+			<label for="measuring_apparatus" class="required">Measuring apparatus <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="measuring_apparatus" name="measuring_apparatus" list="measuring_apparatus_suggestions" placeholder="Start typing measuring apparatus" size="45"/>
+			<datalist id="measuring_apparatus_suggestions">
+			<!--[if lte IE 9]><select><![endif]-->
+			<option label="Hioki" value="Hioki"></option>		
+			<option label="Power Master" value="Power Master"></option>
+			<!--[if lte IE 9]></select><![endif]-->
+			</datalist>
+		  	</div>	
+			
+			</div>	
+		</div>
+	</div>	
+	</div>	
+	</div>		
+	
+	<div class="mrgn-tp-lg">
+	<div class="row mrgn-tp-lg mrgn-bttm-lg">
+	<div class="col-md-12">
+	<a id="primary"></a>	
+	<div class="panel panel-default mceg-card" id="002">
+			<header class="panel-heading">
+			<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Primary information</h2>
+			</header>	
+      
+      		<div class="panel-body mrgn-lft-md">	
+
+			
+			  <div class="form-group">
+			  <fieldset>
+				<legend><span class="field-name">Primary readings</span>	</legend>
+
+				<div class="form-group">
+					<label for="volts" class="required"><span class="field-name">Volts</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" id="volts" name="primary" type="text" required="required" data-rule-minlength="7" size="7" maxlength="7" placeholder="347/600" />
+				</div>
+				<div class="form-group">
+					<label for="amps" class="required"><span class="field-name">Amperes</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" id="amps" name="primary" type="text" required="required" data-rule-minlength="3" size="6" maxlength="6" placeholder="400" /> 
+				</div>
+				<div class="form-group">
+					<label for="hertz" class="required"><span class="field-name">Hertz</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" id="hertz" name="primary" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3" placeholder="" />
+				</div>
+				<div class="form-group">
+					<label for="phase" class="required"><span class="field-name">Phase</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" id="phase" name="primary" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3" placeholder="3" />  
+				</div>  
+				<div class="form-group">
+				  <label for="wire" class="required"><span class="field-name">Wire</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" id="wire" name="primary" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3" placeholder="4"  /> 
+				</div>
+			  </fieldset>
+			  </div>	  
+			
+		  
+			  <div class="form-group">
+			  <fieldset class="provisional gc-chckbxrdio form-inline">
+				<legend class="required mrgn-bttm-sm">Network <strong class="required">(required)</strong></legend>
+				<div class="label-inline">
+					<input id="network_yes" type="radio" name="network" checked>
+					<label for="network_yes">Y</label>
+				</div>
+				 <!--<div class="label-inline">
+					<input id="network_no" type="radio" name="network">
+					<label for="network_no">No</label>
+				</div> -->
+				<div class="label-inline">
+					<input id="network_delta" type="radio" name="network">
+					<label for="network_delta">Delta</label>
+				</div>
+			  </fieldset>
+			  </div>
+				
+			</div>	
+			</div>	
+			</div>	
+			</div>	
+		
+				
+			<div class="mrgn-tp-lg">
+			<div class="row mrgn-tp-lg mrgn-bttm-lg">
+			<div class="col-md-12">
+
+			<div class="panel panel-default mceg-card" id="003">
+					<header class="panel-heading">
+					<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Billing multiplier</h2>
+					</header>	
+
+				<div class="panel-body mrgn-lft-md">	
+			
+				<div class="form-group">
+					<label for="demand" class="required"><span class="field-name">Demand</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" id="demand" name="billing_multiplier" type="text" required="required" data-rule-minlength="5" size="5" maxlength="5" placeholder="480" />  
+				</div> 
+				 <div class="form-group">
+					<label for="energy" class="required"><span class="field-name">Energy</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" id="energy" name="billing_multiplier" type="text" required="required" data-rule-minlength="5" size="5" maxlength="5" placeholder="480" />  
+				</div>   
+			  
+			  </div>
+			
+			</div>	
+			</div>	
+			</div>	
+			</div>	
+		
+				
+			<div class="mrgn-tp-lg">
+			<div class="row mrgn-tp-lg mrgn-bttm-lg">
+			<div class="col-md-12">
+
+			<div class="panel panel-default mceg-card" id="003">
+					<header class="panel-heading">
+					<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Demand unit information</h2>
+					</header>	
+
+				<div class="panel-body mrgn-lft-md">		
+		  
+			  <div class="form-group">
+			  <fieldset class="provisional gc-chckbxrdio">
+				<legend class="required mrgn-bttm-sm">Demand units <strong class="required">(required)</strong></legend>
+				<ul class="list-unstyled lst-spcd-2">
+					<li class="radio">
+						<input type="radio" name="demand_units" id="kw_kvar">
+						<label for="kw_kvar"><acronym title="kilowatt">kW</acronym> and <acronym title="kilovolt-ampere reactive">kVAR</acronym></label>
+					</li>
+					<li class="radio">
+						<input type="radio" name="demand_units" id="kw_kva" checked>
+						<label for="kw_kva"><acronym title="kilowatt">kW</acronym> and <acronym title="kilovolt-ampere">kVA</acronym></label>
+					</li>
+					<li class="radio">
+						<input type="radio" name="demand_units" id="kvA">
+						<label for="kvA"><acronym title="kilovolt-ampere">kVA</acronym></label>
+					</li>
+					<li class="radio">
+						<input type="radio" name="demand_units" id="kw">
+						<label for="kw"><acronym title="kilowatt">kW</acronym></label>
+					</li>
+				</ul> 
+
+			  </fieldset>
+
+			</div>
+				  
+			</div>
+			</div>
+			</div>
+				  
+			</div>
+		
+		<div class="clearfix"></div> 
+		  
+	  	
+		<div class="row mrgn-tp-sm mrgn-bttm-lg">
+		<div class="col-md-12">
+		
+		<div class="panel panel-default mceg-card" id="003">
+			<header class="panel-heading">
+			<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Meter(s)</h2>
+			</header>	
+      
+      	<div class="panel-body mrgn-lft-md">	
+		
+    	<p>Press the <strong>Add meter</strong> button below to add to the list of meter(s).</p>
+			
+		<div class="pull-left mrgn-bttm-md mrgn-tp-md">
+			<a class="btn btn-default" title="Add meter" role="button" href="001-AR-mceg-inspection-01-installation-add-meter-en.html"><span class="fas fa-plus"></span><span class="mrgn-lft-sm">Add meter</span></a>
+		</div>	
+		
+		<div class="clearfix"></div>
+			
+		<a id="meters"></a>	
+		<div class="table-responsive">
+		<table class="wb-tables table table-striped table-hover table-border dataTable" data-wb-tables="{"paging" : false, "searching" : false, "info": false}" id="delegate_table" aria-describedby="delegate_table" role="grid" >
+        <caption class="wb-inv">Meter(s)</caption>
+       	<thead>
+		<tr role="row">
+        <th aria-label="Meter inspection number" class="sorting_disabled">Meter inspection number</th>
+        <th aria-label="Manufacturer: activate for ascending sort" class="sorting_disabled" aria-sort="ascending">Manufacturer</th>
+		<th aria-label="Model: activate for ascending sort" aria-sort="ascending">Model</th>
+		<th aria-label="Role: activate for ascending sort" aria-sort="ascending">Serial number</th>
+        <th aria-label="Actions" class="sorting_disabled text-center">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+		<td>194077</td>
+		<td>Itron</td>	
+		<td>CP1ADR3</td>	
+		<td>69446100</td>
+		<td class="text-center"><a href="#.html"><span class="far fa-edit mrgn-rght-sm"></span><span class="wb-inv">Edit meter inspection number: 194077</span></a>
+		<a href="#.html"><span class="far fa-trash-alt mrgn-rght-sm"></span><span class="wb-inv">Delete meter inspection number: 194077</span></a>	
+		</td>	
+		</tr>
+        </tbody>
+	</table>
+		</div>
+	
+		</div>		  
+	  </div>
+  </div>
+</div>
+
+	<div class="row mrgn-tp-sm mrgn-bttm-lg">
+		<div class="col-md-12">
+		
+		<div class="panel panel-default mceg-card" id="004">
+			<header class="panel-heading">
+			<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Transformer(s)</h2>
+			</header>	
+      
+      	<div class="panel-body mrgn-lft-md">	
+		
+		<a id="ct"></a>
+				
+		
+		<p class="mrgn-tp-smmrgn-bttm-md">Press the <strong>Add current transformer (CT)</strong> button or the <strong>Add potential transformer (CT)</strong> below to add to the list of transformer(s).</p>
+			
+		<div class="pull-left mrgn-bttm-md mrgn-tp-md">
+			<a class="btn btn-default" title="Add current transformer" role="button" href="001-CG-mceg-inspection-01-installation-add-meter-transformer-ct-en.html"><span class="fas fa-plus"></span><span class="mrgn-lft-sm">Add current transformer (CT)</span></a>
+			<a class="btn btn-default" title="Add potential transformer" role="button" href="001-CG-mceg-inspection-01-installation-add-meter-transformer-pt-en.html"><span class="fas fa-plus"></span><span class="mrgn-lft-sm">Add potential transformer (PT)</span></a>
+		</div>	
+		
+		<div class="clearfix"></div>
+			
+			
+		<div class="table-responsive">
+		<table class="wb-tables table table-striped table-hover table-border dataTable" data-wb-tables="{"paging" : false, "searching" : false, "info": false}" id="delegate_table" aria-describedby="delegate_table" role="grid" >
+        <caption class="wb-inv">Transformer(s)</caption>
+       	<thead>
+		<tr role="row">
+		<th aria-label="Transformer type" class="sorting_disabled">Transformer type</th>	
+        <th aria-label="Inspection number" class="sorting_disabled">Inspection number</th>
+        <th aria-label="Manufacturer: activate for ascending sort" class="sorting_disabled" aria-sort="ascending">Manufacturer</th>
+		<th aria-label="Model: activate for ascending sort" aria-sort="ascending">Model</th>
+		<th aria-label="Role: activate for ascending sort" aria-sort="ascending">Serial number</th>
+        <th aria-label="Actions" class="sorting_disabled">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+		<td>Current transformer</td>	
+		<td>4809</td>
+		<td>GE</td>	
+		<td></td>	
+		<td>52897130</td>
+		<td class="text-center"><a href="#.html"><span class="far fa-edit mrgn-rght-sm"></span><span class="wb-inv">Edit current transformer inspection number: 4809</span></a>
+		<a href="#.html"><span class="far fa-trash-alt mrgn-rght-sm"></span><span class="wb-inv">Delete current transformer inspection number: 4809</span></a>
+		</td>	
+		</tr>
+        
+       
+        </tbody>
+	</table>
+		</div>
+				
+		
+		</div>
+		</div>
+		</div>	
+			
+				
+		<div class="clearfix"></div>	
+			
+		
+				
+		</div>			
+				
+		  
+</div>
+
+		
+		
+		<div class="clearfix"></div>
+      		
+		<div class="form-group">
+		<button type="button" class="btn btn-default" onclick="MM_goToURL('parent','001-CG-mceg-plan-inspection-pills-01-en.html');return document.MM_returnValue">Previous</button> 	
+		<button type="button" class="btn btn-primary" onclick="MM_goToURL('parent','001-CG-mceg-inspection-01-summary-01-en.html');return document.MM_returnValue">Next</button> 
+		<!--<button id="buttonSave" class="btn btn-link" type="submit" name="buttonSave">Save and close</button>
+		<span>|</span>--><button id="buttonCancel" name="buttonCancel" type="button" class="btn btn-link">Cancel</button>
+		</div>
+
+		
+ 
+	
+  <!-- Page content END -->
+  <div id="def-preFooter"> 
+    <!-- Write closure fall-back static file --> 
+    <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/preFooter-en.html --> 
+  </div>
+  <!-- Write closure template --> 
+  <script>
+				var defPreFooter = document.getElementById("def-preFooter");
+				defPreFooter.outerHTML = wet.builder.preFooter({
+						"dateModified": "2021-09-16",
+                        "showShare":  false,
+				        "showFeedback": false
+				});
+			</script> 
+</main>
+<div id="def-footer"> 
+  <!-- Write closure fall-back static file --> 
+  <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/appFooter-en.html --> 
+</div>
+<!-- Write closure template --> 
+<script>
+			var defFooter = document.getElementById("def-footer");
+			defFooter.outerHTML = wet.builder.appFooter({
+				"showFeatures": false
+			});
+		</script> 
+<!-- Write closure template --> 
+<script>
+			document.write(wet.builder.refFooter({
+				"isApplication": true
+			}));
+		</script>
+</body>
+</html>

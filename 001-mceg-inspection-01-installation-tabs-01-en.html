@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Electricity &amp; Gas Inspection System</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
+<!-- Meta data--> 
+<!-- Load closure template scripts --> 
+	
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/soyutils.js"></script> 
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/wet-en.js"></script>
+
+<noscript>
+<!-- Write closure fall-back static file --> 
+<!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/refTop.html -->
+</noscript>
+<!-- Write closure template --> 
+<script>
+			document.write(wet.builder.refTop({
+				"isApplication": true
+			}));
+		</script>
+<link rel="stylesheet" href="css/mceg-01.css">
+<link rel="stylesheet" href="css/mceg-02.css">
+
+<script type="text/javascript">
+		function MM_goToURL() { //v3.0
+		  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+		  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+		}
+</script>	
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" rel="stylesheet">	
+</head>
+<body vocab="https://schema.org/" typeof="WebPage">
+<div id="def-top"> 
+  <!-- Write closure fall-back static file --> 
+  <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/custommenuTop-en.html --> 
+</div>
+<!-- Write closure template --> 
+<script>
+			var defTop = document.getElementById("def-top");
+			defTop.outerHTML = wet.builder.appTop({
+				"appName": [{"text": "Electricity &amp; Gas Inspection System", "href": "#"}],
+				"lngLinks": [{"lang": "fr", "href": "apptop_custommenu-fr.html", "text": "Français"}],
+				/*"appSettings": [{"href": "#"}],*/
+		        "signOut": [{"href": "#"}],
+				"menuPath": "menu/mceg-menu-006-en.html"
+			});
+		</script>
+<main role="main" property="mainContentOfPage" class="container"> 
+  
+  <!-- Page content START -->
+  <h1 property="name" id="wb-cont" class="mrgn-bttm-0">Plan inspection</h1>
+  <div class="mceg-user-bg mrgn-tp-0">
+    <div class="container1">
+      <div class="mrgn-tp-0 mrgn-bttm-0 text-right"><span class="mceg-user-name1"><span class="fas fa-user-circle fa-lg mrgn-rght-sm"></span> Elizabeth Cotten</span></div>
+    </div>
+  </div>
+  <!-- Page title corresponds with title metadata data  --> 
+	
+  	<div class="mrgn-tp-md">
+	<ul class="nav nav-pills nav-justified">
+	<li><a href="001-mceg-plan-inspection-pills-01-en.html">1. Client selection</a></li>
+	<li class="active"><a href="001-mceg-inspection-01-installation-tabs-01-en.html">2. Installation</a></li>
+	<li><a href="#">3. Summary</a></li>
+	<li><a href="#">4. Certificate</a></li>	
+	<li><a href="#">5. Email</a></li>		
+	</ul>
+	</div>
+	
+	
+	<div class="wb-tabs mrgn-tp-md">
+	<div class="tabpanels">
+		<details id="details-panel1"  open="open">
+			<summary>Primary</summary>
+		
+	
+	<div class="mrgn-tp-lg">
+	<div class="row mrgn-tp-lg mrgn-bttm-lg">
+	<div class="col-md-12">
+		
+    <div class="mceg-card" id="001">
+      <div class="mceg-header mceg-sceduled">
+        <div class="row">
+          <!--<div class="col-xs-6">
+            <h2 class="mrgn-tp-sm h3">E-24</h2>
+          </div>
+          <div class="col-xs-6 text-right">MCMS<span class="badge mrgn-lft-md">3<span class="wb-inv"> inpections scheduled</span></span></div>
+        	-->
+			<div class="col-xs-12">
+				<h2 class="mrgn-tp-sm h3">Primary information</h2>
+			</div>
+		</div>	
+      </div>
+		
+      <div class="mceg-content mrgn-lft-md">
+		  
+		   <div class="form-group">
+			<label for="classification" class="required"><span class="field-name">Classification</span> <strong class="required">(required)</strong></label>
+			<input class="form-control" id="classification" name="classification" type="text" required="required" data-rule-minlength="4" />
+		  </div>
+
+		<div class="form-group">
+			<label for="measuring_apparatus" class="required">Measuring apparatus <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="measuring_apparatus" name="measuring_apparatus" list="measuring_apparatus_suggestions" placeholder="Start typing measuring apparatus"/>
+			<datalist id="measuring_apparatus_suggestions">
+			<!--[if lte IE 9]><select><![endif]-->
+			<option label="Power Master 962818" value="Power Master 962818"></option>
+			<!--[if lte IE 9]></select><![endif]-->
+			</datalist>
+		  </div>
+		  
+		 
+		  <div class="form-group">
+		  <fieldset>
+			<legend><span class="field-name">Primary readings</span>	</legend>
+			  
+			<div class="form-group">
+				<label for="volts" class="required"><span class="field-name">Volts</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="volts" name="primary" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  />
+			</div>
+			<div class="form-group">
+				<label for="amps" class="required"><span class="field-name">Amps</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="amps" name="primary" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  /> 
+			</div>
+			<div class="form-group">
+				<label for="hertz" class="required"><span class="field-name"><a title="Hertz">Hz</a></span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="hertz" name="primary" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  />
+			</div>
+			<div class="form-group">
+			  	<label for="phase" class="required"><span class="field-name">Phase</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="phase" name="primary" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  />  
+			</div>  
+			<div class="form-group">
+			  <label for="wire" class="required"><span class="field-name">Wire</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="wire" name="primary" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  /> 
+			</div>
+		  </fieldset>
+		  </div>	  
+			
+		  
+		  <div class="form-group">
+		  <fieldset class="provisional gc-chckbxrdio form-inline">
+			<legend class="required mrgn-bttm-sm">Network <strong class="required">(required)</strong></legend>
+			<div class="label-inline">
+				<input id="inlineRadio1" type="radio" name="optradio">
+				<label for="inlineRadio1">Yes</label>
+			</div>
+			<div class="label-inline">
+				<input id="inlineRadio2" type="radio" name="optradio">
+				<label for="inlineRadio2">No</label>
+			</div>
+		  </fieldset>
+		  </div>	
+		  
+		  <div class="form-group">
+		  <fieldset class="provisional gc-chckbxrdio">
+			<legend class="required mrgn-bttm-sm">Demand units <strong class="required">(required)</strong></legend>
+			<ul class="list-unstyled lst-spcd-2">
+				<li class="radio">
+					<input type="radio" name="demand_units" id="kw_kvar">
+					<label for="kw_kvar">KW and kVAR</label>
+				</li>
+				<li class="radio">
+					<input type="radio" name="demand_units" id="kw_kva">
+					<label for="kw_kva">KW and KvA</label>
+				</li>
+				<li class="radio">
+					<input type="radio" name="demand_units" id="kvA">
+					<label for="kvA">KvA</label>
+				</li>
+				<li class="radio">
+					<input type="radio" name="demand_units" id="kw">
+					<label for="kw">KW</label>
+				</li>
+			</ul> 
+
+		  </fieldset>
+		  </div>	
+				
+		</div>
+		</div>
+		</div>	
+		</div>	
+  		</div>
+		
+		
+		</details>
+		<details id="details-panel2">
+			<summary>Meter(s)</summary>
+		
+     <div class="mrgn-tp-lg">
+	
+	<div class="col-md-8">
+    <div class="mceg-card" id="001">
+      <div class="mceg-header mceg-sceduled">
+        <div class="row">
+          <!--<div class="col-xs-6">
+            <h2 class="mrgn-tp-sm h3">E-24</h2>
+          </div>
+          <div class="col-xs-6 text-right">MCMS<span class="badge mrgn-lft-md">3<span class="wb-inv"> inpections scheduled</span></span></div>
+        	-->
+			<div class="col-xs-12">
+				<h2 class="mrgn-tp-sm h3">Add meter</h2>
+			</div>
+		</div>	
+      </div>
+		<div class="mceg-content">
+		<!--<div class="panel panel-default">
+		  <header class="panel-heading">
+		   <h3 class="panel-title">Add meter</h3>
+		  </header>
+		  <div class="panel-body">-->
+		  	<div class="mrgn-lft-md">
+			
+			<div class="form-group">
+			<label for="meter_inspection_number" class="required">Meter inspection number <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="meter_inspection_number" name="meter_inspection_number" list="meter_inspection_number_suggestions" placeholder="Select meter inspection number"/>
+			<datalist id="meter_inspection_number_suggestions">
+			<!--[if lte IE 9]><select><![endif]-->
+			<option label="6173052 P9" value="6173052 P9"></option>
+			<!--[if lte IE 9]></select><![endif]-->
+			</datalist>
+		  	</div>
+				
+			<div class="form-group mrgn-bttm-md">
+		  	<fieldset>
+			<legend><span class="field-name">Seal</span></legend>
+			  
+			<div class="form-group">
+				<label for="year" class="required"><span class="field-name">Year</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="year" name="seal" type="text" required="required" data-rule-minlength="4" size="4" maxlength="4"  />
+			</div>
+			<div class="form-group">
+				<label for="year_expires" class="required"><span class="field-name">Expires</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="year_expires" name="seal" type="text" required="required" data-rule-minlength="4" size="4" maxlength="4"  />
+			</div>
+			</fieldset>
+			</div>	
+				
+			<div class="form-group">
+			<label for="manufacturer" class="required">Manufacturer <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="manufacturer" name="manufacturer" list="manufacturer_suggestions" placeholder="Start typing manufacturer" size="50"/>
+			<datalist id="manufacturer_suggestions">
+			<!--[if lte IE 9]><select><![endif]-->
+			<option label="Itron" value="Itron"></option>
+			<!--[if lte IE 9]></select><![endif]-->
+			</datalist>
+		  	</div>
+			
+			<div class="form-group">
+			<label for="model" class="required">Model <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="model" name="model" list="model_suggestions" placeholder="Start typing model" size="50"/>
+			<datalist id="model_suggestions">
+			<!--[if lte IE 9]><select><![endif]-->
+			<option label="CP25OA" value="CP25OA"></option>
+			<!--[if lte IE 9]></select><![endif]-->
+			</datalist>
+		  	</div>
+			
+			<div class="form-group">
+			<label for="serial_number" class="required">Serial number <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="serial_number" name="serial_number" list="serial_number_suggestions" placeholder="Start typing serial number" size="50"/>
+			<datalist id="serial_number_suggestions">
+			<!--[if lte IE 9]><select><![endif]-->
+			<option label="317 386 452" value="317 386 452"></option>
+			<!--[if lte IE 9]></select><![endif]-->
+			</datalist>
+		  	</div>
+				
+			<div class="form-group mrgn-bttm-md">
+		  	<fieldset>
+			<legend><span class="field-name">Readings</span></legend>
+			
+			<div class="form-group">
+				<label for="type" class="required"><span class="field-name">Type</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="type" name="readings" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  />
+			</div>	
+			<div class="form-group">
+				<label for="volts" class="required"><span class="field-name">Volts</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="volts" name="readings" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  />
+			</div>
+			<div class="form-group">
+				<label for="amps" class="required"><span class="field-name">Amps</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="amps" name="readings" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  /> 
+			</div>
+			
+			<div class="form-group">
+				<label for="multiplier" class="required"><span class="field-name">Multiplier</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="multiplier" name="readings" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  />
+			</div>
+			<div class="form-group">
+				<label for="billing_multiplier" class="required"><span class="field-name">Billing multiplier</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="billing_multiplier" name="readings" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  />
+			</div>		
+				
+			<div class="form-group">
+			  	<label for="phase" class="required"><span class="field-name">Phase</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="phase" name="readings" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  />  
+			</div>  	
+			<div class="form-group">
+				<label for="kilowatt-hour" class="required"><span class="field-name"><a title="kilowatt-hour">Kh</a></span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="kilowatt-hour" name="readings" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  />
+			</div>
+			<div class="form-group">
+			  <label for="wire" class="required"><span class="field-name">Wire</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="wire" name="readings" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  /> 
+			</div>
+			<div class="form-group">
+			  <label for="elements" class="required"><span class="field-name">Elements</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="elements" name="readings" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  /> 
+			</div>
+			<div class="form-group">
+			  <label for="error_percentage" class="required"><span class="field-name">Error percentage</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="error_percentage" name="readings" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  /> 
+			</div>	
+			
+		  	</fieldset>
+		  	</div>
+				
+			<div class="form-group">
+		  <fieldset class="provisional gc-chckbxrdio form-inline">
+			<legend class="required mrgn-bttm-sm">Transformer type <strong class="required">(required)</strong></legend>
+			<div class="label-inline">
+				<input id="current_transformer" type="radio" name="transformer_type">
+				<label for="current_transformer">Current transformer (CT)</label>
+			</div>
+			<div class="label-inline">
+				<input id="potential_transformer" type="radio" name="transformer_type">
+				<label for="potential_transformer">Potential transformer (PT)</label>
+			</div>
+		  </fieldset>
+		  </div>
+				
+				
+			
+		  </div>
+			
+			<div class="mrgn-tp-xl">
+						
+			<div class="form-group mrgn-bttm-0">
+			<button type="button" class="btn btn-primary" onclick="MM_goToURL('parent','.html');return document.MM_returnValue">Add to list</button>	
+			<!--<button id="buttonSave" class="btn btn-link" type="submit" name="buttonSave">Add another</button>
+			<span class="mrgn-lft-md">|</span><button id="buttonCancel" name="buttonCancel" type="button" class="btn btn-link">Cancel</button>-->
+			</div>
+	
+		</div>
+		
+      
+		
+		<!--<a class="wb-lbx btn btn-primary" title="Add meter" role="button" href="#add_meter"><span class="fas fa-plus-circle"></span><span class="mrgn-lft-sm">Add meter</span></a>-->
+			
+			
+		
+				
+	</div>
+    </div>
+  	</div>
+		
+  <div class="col-md-4">
+	  
+	  <div class="mceg-card" id="002">
+      <div class="mceg-header mceg-sceduled">
+        <div class="row">
+          <!--<div class="col-xs-6">
+            <h2 class="mrgn-tp-sm h3">E-24</h2>
+          </div>
+          <div class="col-xs-6 text-right">MCMS<span class="badge mrgn-lft-md">3<span class="wb-inv"> inpections scheduled</span></span></div>
+        	-->
+			<div class="col-xs-12">
+				<h2 class="mrgn-tp-sm h3">Meters to be inspected</h2>
+			</div>
+		</div>	
+      </div>
+		<div class="mceg-content mrgn-lft-md">
+			<div class="table-responsive">
+		<table class="wb-tables table table-striped table-hover dataTable" data-wb-tables="{"paging" : false, "searching" : false, "info": false}" id="delegate_table" aria-describedby="delegate_table" role="grid" >
+        <caption class="wb-inv">Meter(s)</caption>
+       	<thead>
+		<tr role="row">
+        <th aria-label="Meter inspection number" class="sorting_disabled">Meter inspection number</th>
+        <!--<th aria-label="Manufacturer: activate for ascending sort" class="sorting_disabled" aria-sort="ascending">Manufacturer</th>
+		<th aria-label="Model: activate for ascending sort" aria-sort="ascending">Model</th>
+		<th aria-label="Role: activate for ascending sort" aria-sort="ascending">Serial number</th>    -->
+        <th aria-label="Actions" class="sorting_disabled">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        
+        
+        <tr>
+        <td><a href="#.html">6173052  P9</a></td>
+        <!--<td>Itron</td>
+        <td>CP25OA</td>
+		<td>317 386 452</td>-->
+        <td class="center">
+        <!--<a class="wb-lbx" title="Edit meter inspection number - 6173052  P9" role="button" href="#edit_content"><span class="fas fa-edit"></span><span class="wb-inv">Edit meter inspection number - 6173052  P9</span></a>
+        <section id="edit_content" class="mfp-hide modal-dialog modal-content overlay-def">
+            <header class="modal-header">
+            <h2 class="modal-title">Edit meter inspection number - 6173052  P9</h2>
+            </header>
+            <div class="modal-body">
+             
+			</div>
+        </section>-->
+        <a class="wb-lbx" title="Remove meter inspection number - 6173052  P9" role="button" href="#remove_content">
+		<span class="fas fa-trash-alt"></span>
+		<span class="wb-inv">Remove meter inspection number - 6173052  P9</span>
+		</a>
+        <section id="remove_content" class="mfp-hide modal-dialog modal-content overlay-def">
+            <header class="modal-header">
+            <h2 class="modal-title">Remove meter inspection number - 6173052  P9</h2>
+            </header>
+            <div class="modal-body">
+            
+           <!-- <p>Are you sure you want to remove the following meter inspection number from list of devices to be inspected?</p>-->
+            
+			<div class="form-group form-inline mrgn-lft-md">
+			
+			  <fieldset class="provisional gc-chckbxrdio form-inline">
+				<legend class="required mrgn-bttm-sm">Do you want to remove the following meter inspection number from list of devices to be inspected? <strong class="required">(required)</strong></legend>
+				<div class="label-inline">
+					<input id="yes_remove_device" type="radio" name="yes_no_remove_device">
+					<label for="yes_remove_device">Yes</label>
+				</div>
+				<div class="label-inline">
+					<input id="no_remove_device" type="radio" name="yes_no_remove_device">
+					<label for="no_remove_device">No</label>
+				</div>
+			  </fieldset>
+			  
+
+            
+            </div>
+             
+			</div>
+        </section>
+        </td>
+        </tr>
+        </tbody>
+	</table>
+		</div>
+		  
+	  </div>
+  </div>
+</div>
+		
+
+		
+		<div class="clearfix"></div>
+      
+		
+		<!--<a class="wb-lbx btn btn-primary" title="Add meter" role="button" href="#add_meter"><span class="fas fa-plus-circle"></span><span class="mrgn-lft-sm">Add meter</span></a>-->
+			
+			
+		
+			
+		
+		</details>		
+			
+		
+		<details id="details-panel3">
+			<summary>Current transformer (CT)</summary>
+			<p>...</p>
+		</details>
+		<details id="details-panel4">
+			<summary>Potential transformer (PT)</summary>
+			<p>...</p>
+		</details>
+		 </div>
+		</div>
+		
+	
+		
+		
+		<div class="form-group mrgn-tp-lg">
+		<button type="button" class="btn btn-primary" onclick="MM_goToURL('parent','#.html');return document.MM_returnValue">Next</button> 
+		<button id="buttonSave" class="btn btn-link" type="submit" name="buttonSave">Save and close</button>
+		<span>|</span><button id="buttonCancel" name="buttonCancel" type="button" class="btn btn-link">Cancel</button>
+		</div>
+
+		
+ 
+	
+  <!-- Page content END -->
+  <div id="def-preFooter"> 
+    <!-- Write closure fall-back static file --> 
+    <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/preFooter-en.html --> 
+  </div>
+  <!-- Write closure template --> 
+  <script>
+				var defPreFooter = document.getElementById("def-preFooter");
+				defPreFooter.outerHTML = wet.builder.preFooter({
+						"dateModified": "2021-09-16",
+                        "showShare":  false,
+				        "showFeedback": false
+				});
+			</script> 
+</main>
+<div id="def-footer"> 
+  <!-- Write closure fall-back static file --> 
+  <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/appFooter-en.html --> 
+</div>
+<!-- Write closure template --> 
+<script>
+			var defFooter = document.getElementById("def-footer");
+			defFooter.outerHTML = wet.builder.appFooter({
+				"showFeatures": false
+			});
+		</script> 
+<!-- Write closure template --> 
+<script>
+			document.write(wet.builder.refFooter({
+				"isApplication": true
+			}));
+		</script>
+</body>
+</html>

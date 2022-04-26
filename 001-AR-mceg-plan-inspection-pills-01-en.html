@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Electricity &amp; Gas Inspection System</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
+<!-- Meta data--> 
+<!-- Load closure template scripts --> 
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/soyutils.js"></script> 
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/wet-en.js"></script>
+<noscript>
+<!-- Write closure fall-back static file --> 
+<!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/refTop.html -->
+</noscript>
+<!-- Write closure template --> 
+<script>
+			document.write(wet.builder.refTop({
+				"isApplication": true
+			}));
+		</script>
+<link rel="stylesheet" href="css/mceg-01.css">
+<link rel="stylesheet" href="css/mceg-02.css">
+
+<script type="text/javascript">
+		function MM_goToURL() { //v3.0
+		  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+		  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+		}
+</script>	
+	
+<script type="text/javascript">	
+function myFunction() {
+  // Get the checkbox
+  var checkBox = document.getElementById("utility_company");
+  // Get the output text
+  var text = document.getElementById("text");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+</script>	
+
+<script type="text/javascript">		
+function showUtilityAddress(utilityAddressId, element)
+{
+    document.getElementById(utilityAddressId).style.display = element.value == 1 ? 'block' : 'none';
+}	
+</script>
+	
+<script type="text/javascript">		
+function showCustomerAddress(customerAddressId, element)
+{
+    document.getElementById(customerAddressId).style.display = element.value == 1 ? 'block' : 'none';
+}	
+</script>
+	
+<script type="text/javascript">		
+function showInspectionLocationAddress(inspectionLocationAddressId, element)
+{
+    document.getElementById(inspectionLocationAddressId).style.display = element.value == 1 ? 'block' : 'none';
+}	
+</script>
+	
+<script type="text/javascript">	
+function myFunction() {
+  // Get the checkbox
+  var checkBox = document.getElementById("inspection_location_address");
+  // Get the output text
+  var text = document.getElementById("text");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+</script>	
+		
+	
+	
+</head>
+<body vocab="https://schema.org/" typeof="WebPage">
+<div id="def-top"> 
+  <!-- Write closure fall-back static file --> 
+  <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/custommenuTop-en.html --> 
+</div>
+<!-- Write closure template --> 
+<script>
+			var defTop = document.getElementById("def-top");
+			defTop.outerHTML = wet.builder.appTop({
+				"appName": [{"text": "Electricity &amp; Gas Inspection System", "href": "#"}],
+				"lngLinks": [{"lang": "fr", "href": "apptop_custommenu-fr.html", "text": "Français"}],
+				/*"appSettings": [{"href": "#"}],*/
+		        "signOut": [{"href": "#"}],
+				"menuPath": "menu/mceg-menu-006-en.html"
+			});
+		</script>
+<main role="main" property="mainContentOfPage" class="container"> 
+  
+  <!-- Page content START -->
+  <h1 property="name" id="wb-cont" class="mrgn-bttm-0">Plan inspection</h1>
+  <!--<div class="mceg-user-bg mrgn-tp-0">
+    <div class="container1">
+      <div class="mrgn-tp-0 mrgn-bttm-0 text-right"><span class="mceg-user-name1"><span class="fas fa-user-circle fa-lg mrgn-rght-sm"></span> Elizabeth Cotten</span></div>
+    </div>
+  </div>-->
+  <!-- Page title corresponds with title metadata data  --> 
+	
+	<div class="mrgn-tp-md">
+	<ul class="nav nav-pills nav-justified">
+	<li class="active"><a href="#">1. Inspection details</a></li>
+	<li><a href="001-AR-mceg-inspection-01-installation-en.html">2. Installation</a></li>
+	<li><a href="001-AR-mceg-inspection-01-summary-01-en.html">3. Summary</a></li>
+	<li><a href="#">4. Certificate</a></li>	
+	<li><a href="#">5. Email</a></li>		
+	</ul>
+	</div>
+	
+	
+	
+	<div class="row mrgn-tp-lg mrgn-bttm-lg">
+		<div class="col-md-12">
+	
+		<div class="panel panel-default mceg-card" id="005">
+		<header class="panel-heading">
+	   	<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Utility information</h2>
+	  	</header>	
+      
+      	<div class="panel-body mrgn-lft-md">
+		  
+		  	<div class="form-group">
+			<label for="utility_company" class="required">Utility <strong class="required">(required)</strong></label>
+			<input class="form-control" type="text" id="utility_company" name="utility_company" list="utility_company_suggestions" placeholder="Start typing name of utility" size="50"/>
+			<datalist id="utility_company_suggestions">
+			<option label="BC Hydro" value="BC Hydro"></option>
+			<option label="Hydro Ottawa" value="Hydro Ottawa"></option>
+			<option label="Oshawa PUC Networks Inc" value="Oshawa PUC Networks Inc"></option>	
+			<option label="Saint John Energy" value="Saint John Energy"></option>	
+			</datalist>
+		  	</div>
+			
+			<!--<select class="form-control" id="utility_company" name="utility_company" onchange="showUtility('hidden_div_utility', this)" placeholder="Select utility company" required="required">
+			   <option label="Select a utility"></option>
+			   <option value="0">BC Hydro</option>
+			   <option value="1">Oshawa PUC Networks Inc</option>
+			</select>	-->
+		
+			
+			<div class="form-group">
+			<label for="utility_address" class="required">Utility address <strong class="required">(required)</strong></label>
+			<select class="form-control" id="utility_address" name="utility_address" onchange="showUtilityAddress('hidden_div_utility', this)" placeholder="Start typing address of utility" required="required">
+			   	<option label="Start typing address of utility"></option>
+			   	<option value="0">123 Ottawa Street</option>
+			   	<option value="2">100 Simcoe Street South</option>
+				<option value="1">325 Simms Street, Saint John</option>	
+			</select>	
+			</div>
+			
+			<div id="hidden_div_utility">
+				<div class="row mrgn-lft-md mrgn-bttm-md">
+				  <!--<div><b>Address</b></div>-->
+				  <div>325 Simms Street<br>
+					Saint John, New Brunswick<br>
+					E2M 3L6  
+				  </div>
+				</div>
+			</div>
+			
+			
+		<!--	<div class="form-group">
+			<label for="utility_street_address" class="required"><span class="field-name">Street address</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" type="text" id="utility_street_address" name="utility_street_address" list="utility_street_address_suggestions" placeholder="Start typing the address"/>
+					<datalist id="utility_street_address_suggestions">
+					<!--[if lte IE 9]><select><![endif]-->
+					<!--<option label="123 One Way Street, city, province" value="123 One Way Street, city, province"></option>
+					<!--[if lte IE 9]></select><![endif]-->
+					<!--</datalist>
+			
+			</div>
+			
+			<div class="form-group">
+				<label for="utility_city" class="required"><span class="field-name">City</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="utility_city" name="utility_city" type="text" autocomplete="city" required="required" />
+			</div>
+			
+			<div class="form-group">
+				<label for="utility_province" class="required"><span class="field-name">Province</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="utility_province" name="utility_province" type="text" autocomplete="province" required="required" />
+			</div>
+			
+			<div class="form-group">
+				<label for="utility_postal_code" class="required"><span class="field-name">Postal code</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="utility_postal_code" name="utility_postal_code" type="text" autocomplete="postal_code" required="required" />
+			</div>-->
+			
+			<div class="form-group">
+					<label for="utility_representative"><span class="field-name">Utility representative</span></label>
+					<input class="form-control" id="utility_representative" name="utility_representative" type="text" size="50"/>
+			</div>
+			<div class="form-group">
+					<label for="utility_representative_telephone"><span class="field-name">Utility representative telephone number (including area code)</span></label>
+					<input class="form-control" id="utility_representative_telephone" name="utility_representative_telephone" type="tel" data-rule-phoneus="true" size="50">
+			</div>
+
+		</div>
+		</div>
+		
+		</div>
+		</div>
+	
+	
+		<div class="row mrgn-tp-lg mrgn-bttm-lg">
+		<div class="col-md-12">
+	
+		<div class="panel panel-default mceg-card" id="003">
+		<header class="panel-heading">
+	   	<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Customer information</h2>
+	  	</header>	
+      
+      	<div class="panel-body mrgn-lft-md">
+			
+			<div class="form-group">
+			<label for="customer_name" class="required">Customer<strong class="required">(required)</strong></label>	
+			<input class="form-control" type="text" id="customer_name" name="customer_name" list="customer_name_suggestions" placeholder="Start typing name of company" size="50"/>
+			<datalist id="customer_name_suggestions">
+			<option label="ABC Company" value="ABC Company"></option>
+			<option label="1900 Simcoe Street LTD" value="1900 Simcoe Street LTD"></option>	
+			<option label="The Little NB Box Inc." value="The Little NB Box Inc."></option>		
+			</datalist>
+		  	</div>
+			
+			<div class="form-group">
+			<label for="customer_address" class="required">Customer address <strong class="required">(required)</strong></label>
+			<select class="form-control" id="customer_address" name="customer_address" onchange="showCustomerAddress('hidden_div_customer', this)" placeholder="Start typing address of customer" required="required">
+			   <option label="Start typing address of customer"></option>
+			   <option value="0">123 Ottawa Street</option>
+			   <option value="1">240 Millidge Ave, Saint John, New Brunswick</option>	
+			   <option value="2">1900 Simcoe Street, Oshawa</option>
+			</select>	
+			</div>
+			
+			<div id="hidden_div_customer">
+				<div class="row mrgn-lft-md mrgn-bttm-md">
+				  <div><!--<b>Address</b>-->
+					240 Millidge Ave<br>
+					Saint John, New Brunswick<br>
+					E2K 2M7
+				  </div>
+			</div>
+			</div>
+			
+			
+			
+			
+			<!--<div class="form-group">
+			<label for="customer_street_address" class="required"><span class="field-name">Address</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" type="text" id="customer_street_address" name="customer_street_address" list="customer_street_address_suggestions" placeholder="Start typing the address" size="75" />
+					<datalist id="customer_street_address_suggestions">
+					<!--[if lte IE 9]><select><![endif]-->
+					<!--<option label="1900 Simcoe Street" value="1900 Simcoe Street"></option>
+					<!--[if lte IE 9]></select><![endif]-->
+					<!--</datalist>
+			
+			</div>
+
+			<div class="form-group">
+				<label for="customer_city" class="required"><span class="field-name">City</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="city" name="customer_city" type="text" autocomplete="customer_city" required="required" size="50"/>
+			</div>
+			
+			<div class="form-group">
+				<label for="customer_province" class="required"><span class="field-name">Province</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="customer_province" name="customer_province" type="text" autocomplete="customer_province" required="required" />
+			</div>
+			
+			<div class="form-group">
+				<label for="customer_postal_code" class="required"><span class="field-name">Postal code</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="customer_postal_code" name="customer_postal_code" type="text" autocomplete="postal_code" required="required" />
+			</div>-->
+			
+			
+			
+		  
+		</div>
+		</div>
+		
+		</div>
+		</div>
+	
+		<div class="row mrgn-tp-lg mrgn-bttm-lg">
+		<div class="col-md-12">
+			
+		<div class="panel panel-default mceg-card" id="001">
+			<header class="panel-heading">
+			<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Inspection information</h2>
+			</header>	
+      
+      		<div class="panel-body mrgn-lft-md">	
+
+			<div class="form-group">
+				<label for="inspection_date" class="required"><span class="field-name">Inspection date</span><span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="inspection_date" name="inspection_date" type="date" data-rule-dateISO="true" />
+			</div>
+				
+			<div class="form-group">
+			<label for="form" class="required"><span class="field-name">Form</span> <strong class="required">(required)</strong></label>
+			<select class="form-control" id="form" name="form" autocomplete="form" required="required">
+				<option label="Select a form"></option>
+				<option value="E24">E24</option>
+			</select>
+			</div>	
+				
+			<div class="form-group">
+				<label for="district">District</label>
+				<input class="form-control" type="text" id="district" name="district" size="50" />
+			</div>
+				
+			
+		</div>
+			
+		</div>	
+		</div>	
+		</div>		
+			
+		<div class="row mrgn-tp-lg mrgn-bttm-lg">
+				<div class="col-md-12">
+				<div class="panel panel-default mceg-card" id="002">
+				<header class="panel-heading">
+				<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Inspection location</h2>
+				</header>	
+					
+				<div class="panel-body mrgn-lft-md">	
+				
+				<div class="mrgn-lft-sm">
+					<div class="checkbox provisional gc-chckbxrdio">
+					<input id="inspection_location_address" type="checkbox" onclick="myFunction()">
+					<label for="inspection_location_address">Inspection location same as customer address above</label>
+					</div>
+				</div>	
+					
+				 		
+
+				
+					<!--<div class="form-group">
+					<label for="inspection_street_address" class="required"><span class="field-name">Inspection location address</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" type="text" id="inspection_street_address" name="inspection_street_address" list="street_address_suggestions" placeholder="Start typing inspection location address" size="50"/>
+					<datalist id="street_address_suggestions">-->
+					<!--[if lte IE 9]><select><![endif]-->
+					<!--<option label="123 One Way Street, Ottawa, Ontario K1T 1A3" value="123 One Way Street, Ottawa, Ontario K1T 1A3"></option>-->
+					<!--[if lte IE 9]></select><![endif]-->
+					<!--</datalist>
+					</div>-->
+					
+					<div class="form-group">
+					<label for="inspection_location_address_lookup" class="required">Inspection location address <strong class="required">(required)</strong></label>
+					<select class="form-control" id="inspection_location_address_lookup" name="inspection_location_address_lookup" onchange="showInspectionLocationAddress('hidden_div_inspection_location', this)" placeholder="Start typing address of inspection location" required="required">
+						<option label="Start typing address of utility"></option>
+						<option value="0">123 Ottawa Street</option>
+						<option value="1">240 Millidge Ave, Saint John, New Brunswick</option>		
+					    <option value="2">1900 Simcoe Street</option>
+					</select>	
+					</div>
+					
+					<div id="text" style="display:none">
+				 		<div class="row mrgn-lft-md mrgn-bttm-md">
+						  <!--<div><b>Address</b></div>-->
+						  <div>
+							240 Millidge Ave<br>
+							Saint John, New Brunswick<br>
+							E2K 2M7
+						  </div>
+						</div>
+				 	</div>	
+			
+					<div id="hidden_div_inspection_location">
+						<div class="row mrgn-lft-md mrgn-bttm-md">
+						  <!--<div><b>Address</b></div>-->
+						  <div>240 Millidge Ave<br>
+							Saint John, New Brunswick<br>
+							E2K 2M7 
+						  </div>
+						</div>
+					</div>
+					
+					<!--<div class="form-group">
+					<label for="inspection_site_city" class="required"><span class="field-name">City</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" type="text" id="inspection_site_city" name="inspection_site_city" autocomplete="city" required="required" size="50"/>
+					</div>
+					
+					<div class="form-group">
+						<label for="utility_province" class="required"><span class="field-name">Province</span> <strong class="required">(required)</strong></label>
+						<input class="form-control" id="utility_province" name="utility_province" type="text" autocomplete="province" required="required" />
+					</div>
+
+					<div class="form-group">
+						<label for="utility_postal_code" class="required"><span class="field-name">Postal code</span> <strong class="required">(required)</strong></label>
+						<input class="form-control" id="utility_postal_code" name="utility_postal_code" type="text" autocomplete="postal_code" required="required" />
+					</div>-->
+					
+					
+					
+					<div class="form-group">
+						<label for="inspection_location_notes"><span class="field-name">Additional notes for location (e.g. meter cabinet, outside wall, pole, yard, etc.)</span> </label>
+						<textarea  class="form-control" id="inspection_location_notes" name="inspection_location_notes" rows="8" cols="150"></textarea>
+							
+					</div>
+								
+			</div>	
+			</div>
+
+		   </div>
+			
+		</div>	
+		
+	<div class="row mrgn-tp-lg mrgn-bttm-lg">
+		<div class="col-md-12">
+		<div class="panel panel-default mceg-card" id="004">
+		<header class="panel-heading">
+	   	<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Inspection location contact information</h2>
+	  	</header>	
+      
+		
+      	<div class="panel-body mrgn-lft-md">
+
+				<div class="form-group">
+					<label for="first_name" class="required"><span class="field-name">First name</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" id="first_name" name="first_name" type="text" autocomplete="given-name" required="required" data-rule-minlength="2" size="50" />
+				</div>
+
+				<div class="form-group">
+					<label for="last_name" class="required"><span class="field-name">Last name</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" id="last_name" name="last_name" type="text" autocomplete="family-name" required="required" data-rule-minlength="2" size="50" />
+				</div>
+
+				<div class="form-group">
+					<label for="telephone" class="required"><span class="field-name">Telephone number (including area code)</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" id="telephone" name="telephone" type="tel" autocomplete="tel" required="required" data-rule-phoneUS="true" size="50" />
+				</div>
+
+				<div class="form-group">
+					<label for="email" class="required"><span class="field-name">Email address</span> (yourname@domain.com) <strong class="required">(required)</strong></label>
+					<input class="form-control" id="email" name="email" type="email" autocomplete="email" required="required" size="50"/>
+				</div>
+			
+		  
+		</div>
+		</div>	
+		</div>	
+  		</div>		
+					
+	
+		
+		
+	
+		
+			
+		
+		
+		<div class="mrgn-tp-lg">
+		
+  		
+			
+		
+		
+		<div class="form-group">
+		<button id="buttonSave" class="btn btn-primary" type="submit" name="buttonSave">Save and close</button>
+		<button type="button" class="btn btn-default" onclick="MM_goToURL('parent','001-AR-mceg-inspection-01-installation-en.html');return document.MM_returnValue">Next</button>	
+		<button id="buttonCancel" name="buttonCancel" type="button" class="btn btn-link">Cancel</button>
+		</div>
+
+</div>
+	
+  <!-- Page content END -->
+  <div id="def-preFooter"> 
+    <!-- Write closure fall-back static file --> 
+    <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/preFooter-en.html --> 
+  </div>
+  <!-- Write closure template --> 
+  <script>
+				var defPreFooter = document.getElementById("def-preFooter");
+				defPreFooter.outerHTML = wet.builder.preFooter({
+						"dateModified": "2021-09-16",
+                        "showShare":  false,
+				        "showFeedback": false
+				});
+			</script> 
+</main>
+<div id="def-footer"> 
+  <!-- Write closure fall-back static file --> 
+  <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/appFooter-en.html --> 
+</div>
+<!-- Write closure template --> 
+<script>
+			var defFooter = document.getElementById("def-footer");
+			defFooter.outerHTML = wet.builder.appFooter({
+				"showFeatures": false
+			});
+		</script> 
+<!-- Write closure template --> 
+<script>
+			document.write(wet.builder.refFooter({
+				"isApplication": true
+			}));
+		</script>
+</body>
+</html>
