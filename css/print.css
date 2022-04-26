@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: times;
+    font-size: 8px;  
+    color: #000000;  
+    background-color: #FFFFFF;
+	margin: 0.1cm;
+}
+
+@page {
+	margin: 0.1cm;
+    /*size: A4 landscape;*/
+	size: portrait;
+	
+}
+
+@media print {
+  table {page-break-inside: avoid;}
+}
+
+
+header, footer, aside, nav, form, iframe, .menu, .hero, .adslot {
+  display: none;
+}
+
+.mceg-card {
+  box-shadow: none;
+}
+
+.border-grey {
+	border: 1px solid #ddd;
+}
+
+.panel .panel-default {
+    border-color: none;
+}
+
+.panel {
+	border: none;
+}

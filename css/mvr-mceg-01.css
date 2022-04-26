@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+.mrgn-tp-xl {
+	margin-top: 50px;
+}
+.mrgn-bttm-xl {
+	margin-bottom: 50px;
+}
+.mkhub-user-bg {
+	background-color: rgb(240,240,240);
+}
+.mkhub-snippet-bg {
+	background-color: rgb(250,250,210);
+}
+.mkhub-snippet-link {
+	background-color: rgb(189,183,107);
+	color: rgba(255,255,255,1.00);
+}
+.mkhub-link-link {
+	background-color: rgb(70,130,180);
+	color: rgba(255,255,255,1.00);
+}
+.mkhub-panel-bg {
+	background-color: rgb(240,240,240);
+}
+.mkhub-search-bg {
+	background-color: rgb(178,201,232);
+}
+.mkhub-panel-heading {
+	color: rgb(0,0,0);
+}
+.mkhub-user-name {
+	font-size: 1.3em;
+	color: rgb(56,65,77);
+}
+.mkhub-user-name1 {
+	font-size: .7em;
+	color: rgb(56,65,77);
+}
+.mkhub-breadcrmbs {
+	margin-bottom: 5px;
+}
+.mkhub-resuts-link {
+	font-size: 1.1em;
+}
+.mkhub-category {
+	font-size: .9em;
+}
+.mkhub-panel-title {
+	font-size: 1.2em;
+}
