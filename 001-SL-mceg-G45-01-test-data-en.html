@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Electricity &amp; Gas Inspection System</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
+<!-- Meta data--> 
+<!-- Load closure template scripts --> 
+	
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/soyutils.js"></script> 
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/wet-en.js"></script>
+
+<noscript>
+<!-- Write closure fall-back static file --> 
+<!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/refTop.html -->
+</noscript>
+<!-- Write closure template --> 
+<script>
+			document.write(wet.builder.refTop({
+				"isApplication": true
+			}));
+		</script>
+<link rel="stylesheet" href="css/mceg-01.css">
+<link rel="stylesheet" href="css/mceg-02.css">
+
+<script type="text/javascript">
+		function MM_goToURL() { //v3.0
+		  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+		  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+		}
+</script>
+	
+<script type="text/javascript">	
+function myFunction() {
+  // Get the checkbox
+  var checkBox = document.getElementById("rejected");
+  // Get the output text
+  var text = document.getElementById("text");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+</script>
+	
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" rel="stylesheet">	
+</head>
+<body vocab="https://schema.org/" typeof="WebPage">
+<div id="def-top"> 
+  <!-- Write closure fall-back static file --> 
+  <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/custommenuTop-en.html --> 
+</div>
+<!-- Write closure template --> 
+<script>
+			var defTop = document.getElementById("def-top");
+			defTop.outerHTML = wet.builder.appTop({
+				"appName": [{"text": "Electricity &amp; Gas Inspection System", "href": "#"}],
+				"lngLinks": [{"lang": "fr", "href": "apptop_custommenu-fr.html", "text": "Français"}],
+				/*"appSettings": [{"href": "#"}],*/
+		        "signOut": [{"href": "#"}],
+				"menuPath": "menu/mceg-menu-006-en.html"
+			});
+		</script>
+<main role="main" property="mainContentOfPage" class="container"> 
+  
+  <!-- Page content START -->
+  <h1 property="name" id="wb-cont" class="mrgn-bttm-0">G-45 - Inspection information</h1>
+  <div class="mceg-user-bg mrgn-tp-0">
+    <div class="container1">
+      <div class="mrgn-tp-0 mrgn-bttm-0 text-right"><span class="mceg-user-name1"><span class="fas fa-user-circle fa-lg mrgn-rght-sm"></span> Elizabeth Cotten</span></div>
+    </div>
+  </div>
+  <!-- Page title corresponds with title metadata data  --> 
+	
+  	<div class="mrgn-tp-md">
+	<ul class="nav nav-pills nav-justified">
+	<li><a href="001-SL-mceg-G45-01-en.html">1. Inspection details</a></li>
+	<li><a href="001-SL-mceg-G45-01-installation-en.html">2. Installation details</a></li>
+	<li><a href="001-SL-mceg-G45-01-base-data-en.html">3. Base data</a></li>
+	<li class="active"><a href="001-SL-mceg-G45-01-test-data-en.html">4. Test data</a></li>		
+	<li><a href="001-SL-mceg-G45-01-summary-en.html">5. Summary</a></li>
+	<li><a href="001-SL-mceg-inspection-01-certificate-01-en.html">6. Certificate</a></li>	
+	<li><a href="001-SL-mceg-inspection-01-email-01-en.html">7. Email</a></li>		
+	</ul>
+	</div>
+	
+	
+	
+			
+	
+	
+			<div class="row mrgn-tp-lg">
+			<div class="col-md-12">
+
+			<div class="panel panel-default mceg-card" id="001">
+				<header class="panel-heading">
+					<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Test data unit</h2>
+				</header>	
+
+			<div class="panel-body">	
+			
+			
+			<div class="col-md-12">
+				 <div class="form-group">
+				  <fieldset class="provisional gc-chckbxrdio form-inline">
+					<legend class="required mrgn-bttm-sm">Test data unit <strong class="required">(required)</strong></legend>
+					<div class="label-inline">
+						<input type="radio" name="test_data_units" id="metric">
+						<label for="metric">Metric</label>
+					</div>
+					<div class="label-inline">
+						<input type="radio" name="test_data_units" id="imperial">
+						<label for="imperial">Imperial</label>
+					</div>
+				  </fieldset>
+				  </div>
+			</div>
+				
+			</div>	
+			</div>	
+			</div>	
+			</div>	
+			
+			<div class="row mrgn-tp-sm">
+			<div class="col-md-12">
+
+			<div class="panel panel-default mceg-card" id="002">
+				<header class="panel-heading">
+					<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Calculated seconds per revolutions</h2>
+				</header>	
+
+			<div class="panel-body">		
+				
+			<div class="row">	
+			<div class="col-md-12">
+				<div class="col-md-6">
+					<div class="panel panel-default mceg-card" id="002a">
+					<header class="panel-heading">
+						<h3 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Calculated seconds per revolutions: As found</h3>
+					</header>	
+					<div class="panel-body">	
+					
+					<div class="form-group">
+					<label for="calculated_seconds_per_rev_as_found_set"><span class="field-name"><span class="wb-inv">Calculated seconds per rev.</span>As found - Set</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="calculated_seconds_per_rev_as_found_set" name="calculated_seconds_per_rev_as_found_set" type="text" size="50"/>  
+					</div>
+						
+					<div class="form-group">
+					<label for="calculated_seconds_per_rev_as_found_light_load"><span class="field-name"><span class="wb-inv">Calculated seconds per rev.</span>As found - Light load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="calculated_seconds_per_rev_as_found_light_load" name="calculated_seconds_per_rev_as_found_light_load" type="text" size="50"/>  
+					</div> 
+					
+					<div class="form-group">
+					<label for="calculated_seconds_per_rev_as_found_high_load"><span class="field-name"><span class="wb-inv">Calculated seconds per rev.</span>As found - High load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="calculated_seconds_per_rev_as_found_high_load" name="calculated_seconds_per_rev_as_found_high_load" type="text" size="50" /> 
+					</div> 
+						
+					</div>	
+					</div>
+				</div>	
+				<div class="col-md-6">
+					<div class="panel panel-default mceg-card" id="002b">
+					<header class="panel-heading">
+						<h3 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Calculated seconds per revolutions: As left</h3>
+					</header>	
+					<div class="panel-body">	
+						
+					<div class="form-group">
+					<label for="calculated_seconds_per_rev_as_left_set"><span class="field-name"><span class="wb-inv">Calculated seconds per rev.</span>As left - Set</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="calculated_seconds_per_rev_as_left_set" name="calculated_seconds_per_rev_as_left_set" type="text" size="50"/>  
+					</div> 
+
+					<div class="form-group">
+					<label for="calculated_seconds_per_rev_as_left_light_load"><span class="field-name"><span class="wb-inv">Calculated seconds per rev.</span>As left - Light load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="calculated_seconds_per_rev_as_left_light_load" name="calculated_seconds_per_rev_as_left_light_load" type="text" size="50"/>  
+					</div>
+
+					<div class="form-group">
+					<label for="calculated_seconds_per_rev_as_left_high_load"><span class="field-name"><span class="wb-inv">Calculated seconds per rev.</span>As left - High load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="calculated_seconds_per_rev_as_left_high_load" name="calculated_seconds_per_rev_as_left_high_load" type="text" size="50" /> 
+					</div> 
+						
+					</div>	
+					</div>
+				</div>
+			</div>		
+			</div>		
+			</div>		
+			</div>
+			
+				
+				
+			<div class="row mrgn-tp-sm">
+			<div class="col-md-12">
+
+			<div class="panel panel-default mceg-card" id="003">
+				<header class="panel-heading">
+					<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Regulator inlet pressure</h2>
+				</header>	
+
+			<div class="panel-body">	
+
+			<div class="row">	
+			<div class="col-md-12">
+				<div class="col-md-6">
+					<div class="panel panel-default mceg-card" id="003a">
+					<header class="panel-heading">
+						<h3 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Regulator inlet pressure: As found</h3>
+					</header>	
+					<div class="panel-body">	
+						
+					<div class="form-group">
+					<label for="regulator_inlet_pressure_as_found_set"><span class="field-name"><span class="wb-inv">Regulator inlet pressure</span>As found - Set</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="regulator_inlet_pressure_as_found_set" name="regulator_inlet_pressure_as_found_set" type="text" size="50"/>  
+					</div> 
+
+					<div class="form-group">
+					<label for="regulator_inlet_pressure_as_found_light_load"><span class="field-name"><span class="wb-inv">Regulator inlet pressure</span>As found - Light load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="regulator_inlet_pressure_as_found_light_load" name="regulator_inlet_pressure_as_found_light_load" type="text" size="50"/>  
+					</div> 
+
+					<div class="form-group">
+					<label for="regulator_inlet_pressure_as_left_light_load"><span class="field-name"><span class="wb-inv">Regulator inlet pressure</span>As found - High load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="regulator_inlet_pressure_as_found_high_load" name="regulator_inlet_pressure_as_found_high_load" type="text" size="50"/>  
+					</div> 
+					</div>	
+					</div>
+				</div>	
+				<div class="col-md-6">
+					<div class="panel panel-default mceg-card" id="003b">
+					<header class="panel-heading">
+						<h3 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Regulator inlet pressure: As left</h3>
+					</header>	
+					<div class="panel-body">	
+						<div class="form-group">
+						<label for="regulator_inlet_pressure_as_left_set"><span class="field-name"><span class="wb-inv">Regulator inlet pressure</span>As left - Set</span><!-- <strong class="required">(required)</strong>--></label>
+						<input class="form-control" id="regulator_inlet_pressure_as_left_set" name="regulator_inlet_pressure_as_left_set" type="text" size="50" /> 
+						</div>
+						<div class="form-group">
+						<label for="regulator_inlet_pressure_as_left_light_load"><span class="field-name"><span class="wb-inv">Regulator inlet pressure</span>As left - Light load</span><!-- <strong class="required">(required)</strong>--></label>
+						<input class="form-control" id="regulator_inlet_pressure_as_left_light_load" name="regulator_inlet_pressure_as_left_light_load" type="text" size="50"/>  
+						</div> 
+						<div class="form-group">
+						<label for="regulator_inlet_pressure_as_left_high_load"><span class="field-name"><span class="wb-inv">Regulator inlet pressure</span>As left - High load</span><!-- <strong class="required">(required)</strong>--></label>
+						<input class="form-control" id="regulator_inlet_pressure_as_left_high_load" name="regulator_inlet_pressure_as_left_high_load" type="text" size="50" /> 
+						</div> 
+					</div>	
+					</div>
+				</div>
+				
+			</div>	
+			</div>	
+				
+				
+			</div>
+			</div>	
+			</div>	
+			</div>
+	
+	
+		<div class="row mrgn-tp-sm">
+			<div class="col-md-12">
+
+			<div class="panel panel-default mceg-card" id="004">
+				<header class="panel-heading">
+					<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Observed meter pressure</h2>
+				</header>	
+
+			<div class="panel-body">
+				
+			<div class="row">	
+			<div class="col-md-12">
+				<div class="col-md-6">
+					<div class="panel panel-default mceg-card" id="004a">
+					<header class="panel-heading">
+						<h3 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Observed meter pressure: As found</h3>
+					</header>	
+					<div class="panel-body">
+					<div class="form-group">
+					<label for="observed_meter_pressure_as_found_set"><span class="field-name"><span class="wb-inv">Observed meter pressure</span>As found - Set</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="observed_meter_pressure_as_found_set" name="observed_meter_pressure_as_found_set" type="text" size="50"/>  
+					</div> 
+					<div class="form-group">
+					<label for="observed_meter_pressure_as_found_light_load"><span class="field-name"><span class="wb-inv">Observed meter pressure</span>As found - Light load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="observed_meter_pressure_as_found_light_load" name="observed_meter_pressure_as_found_light_load" type="text" size="50"/>  
+					</div> 
+					<div class="form-group">
+					<label for="observed_meter_pressure_as_found_high_load"><span class="field-name"><span class="wb-inv">Observed meter pressure</span>As found - High load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="observed_meter_pressure_as_found_high_load" name="observed_meter_pressure_as_found_high_load" type="text" size="50" /> 
+					</div> 
+					</div>	
+					</div>
+				</div>	
+				<div class="col-md-6">
+					<div class="panel panel-default mceg-card" id="004b">
+					<header class="panel-heading">
+						<h3 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Observed meter pressure: As left</h3>
+					</header>	
+					<div class="panel-body">	
+						
+					<div class="form-group">
+					<label for="observed_meter_pressure_as_left_set"><span class="field-name"><span class="wb-inv">Observed meter pressure</span>As left - Set</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="observed_meter_pressure_as_left_set" name="observed_meter_pressure_as_left_set" type="text" size="50"/>  
+					</div> 
+				
+					<div class="form-group">
+					<label for="observed_meter_pressure_as_left_light_load"><span class="field-name"><span class="wb-inv">Observed meter pressure</span>As left - Light load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="observed_meter_pressure_as_left_light_load" name="observed_meter_pressure_as_left_light_load" type="text" size="50"/>  
+					</div> 
+				
+					<div class="form-group">
+					<label for="observed_meter_pressure_as_left_high_load"><span class="field-name"><span class="wb-inv">Observed meter pressure</span>As left - High load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="observed_meter_pressure_as_left_high_load" name="observed_meter_pressure_as_left_high_load" type="text" size="50" /> 
+					</div> 
+				
+					</div>	
+					</div>
+				</div>
+			</div>		
+			</div>
+						
+				
+			</div>
+			</div>	
+			</div>	
+			</div>
+	
+		<div class="row mrgn-tp-sm">
+			<div class="col-md-12">
+
+			<div class="panel panel-default mceg-card" id="005">
+				<header class="panel-heading">
+					<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Actual meter pressure</h2>
+				</header>	
+
+			<div class="panel-body">	
+			
+			<div class="row">	
+			<div class="col-md-12">
+				<div class="col-md-6">
+					<div class="panel panel-default mceg-card" id="005a">
+					<header class="panel-heading">
+						<h3 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Actual meter pressure: As found</h3>
+					</header>	
+					<div class="panel-body">	
+					
+					<div class="form-group">
+					<label for="actual_meter_pressure_as_found_set"><span class="field-name"><span class="wb-inv">Actual meter pressure</span>As found - Set</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="actual_meter_pressure_as_found_set" name="actual_meter_pressure_as_found_set" type="text" size="50"/>  
+					</div> 
+				
+					<div class="form-group">
+					<label for="actual_meter_pressure_as_found_light_load"><span class="field-name"><span class="wb-inv">Actual meter pressure</span>As found - Light load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="actual_meter_pressure_as_found_light_load" name="actual_meter_pressure_as_found_light_load" type="text" size="50"/>  
+					</div> 
+				
+					<div class="form-group">
+					<label for="actual_meter_pressure_as_found_high_load"><span class="field-name"><span class="wb-inv">Actual meter pressure</span>As found - High load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="actual_meter_pressure_as_found_high_load" name="actual_meter_pressure_as_found_high_load" type="text" size="50" /> 
+					</div> 
+
+					</div>	
+					</div>
+				</div>	
+				<div class="col-md-6">
+					<div class="panel panel-default mceg-card" id="005b">
+					<header class="panel-heading">
+						<h3 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Actual meter pressure: As left</h3>
+					</header>	
+					<div class="panel-body">	
+						
+					<div class="form-group">
+					<label for="actual_meter_pressure_as_left_set"><span class="field-name"><span class="wb-inv">Actual meter pressure</span>As left - Set</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="actual_meter_pressure_as_left_set" name="actual_meter_pressure_as_left_set" type="text" size="50"/>  
+					</div> 
+				
+					<div class="form-group">
+					<label for="actual_meter_pressure_as_left_light_load"><span class="field-name"><span class="wb-inv">Actual meter pressure</span>As left - Light load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="actual_meter_pressure_as_left_light_load" name="actual_meter_pressure_as_left_light_load" type="text" size="50"/>  
+					</div> 
+				
+					<div class="form-group">
+					<label for="actual_meter_pressure_as_left_high_load"><span class="field-name"><span class="wb-inv">Actual meter pressure</span>As left - High load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="actual_meter_pressure_as_left_high_load" name="actual_meter_pressure_as_left_high_load" type="text" size="50" /> 
+					</div> 
+				
+					</div>	
+					</div>
+				</div>
+			</div>		
+			</div>	
+			
+			</div>
+			</div>	
+			</div>	
+			</div>
+	
+		<div class="row mrgn-tp-sm">
+			<div class="col-md-12">
+
+			<div class="panel panel-default mceg-card" id="006">
+				<header class="panel-heading">
+					<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Stopwatch reading</h2>
+				</header>	
+
+			<div class="panel-body">
+			<div class="col-md-12">
+				<div class="form-group">
+					  <fieldset class="provisional gc-chckbxrdio form-inline">
+						<legend class="mrgn-bttm-sm">Stopwatch reading unit <!--<strong class="required">(required)</strong>--></legend>
+						<div class="label-inline">
+							<input type="radio" name="flow_units" id="cfh">
+							<label for="cfh">seconds/<acronym title="cubic feet">ft<sup>3</sup></acronym><!--<acronym title="">cfh</acronym>--></label>
+						</div>
+						<div class="label-inline">
+							<input type="radio" name="flow_units" id="m3">
+							<label for="m3">seconds/<acronym title="cubic meters">m<sup>3</sup></acronym></label>
+						</div>
+					  </fieldset>
+				</div>
+			</div>
+				
+			<div class="row">	
+			<div class="col-md-12">
+				<div class="col-md-6">
+					<div class="panel panel-default mceg-card" id="006a">
+					<header class="panel-heading">
+						<h3 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Stopwatch reading: As found</h3>
+					</header>	
+					<div class="panel-body">	
+						
+					<div class="form-group">
+					<label for="stopwatch_reading_as_found_set"><span class="field-name"><span class="wb-inv">Stopwatch reading</span>As found - Set</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="stopwatch_reading_as_found_set" name="stopwatch_reading_as_found_set" type="text" size="50"/>  
+					</div> 
+				
+					<div class="form-group">
+					<label for="stopwatch_reading_as_found_light_load"><span class="field-name"><span class="wb-inv">Stopwatch reading</span>As found - Light load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="stopwatch_reading_as_found_light_load" name="stopwatch_reading_as_found_light_load" type="text" size="50"/>  
+					</div> 
+				
+					<div class="form-group">
+					<label for="stopwatch_reading_as_found_high_load"><span class="field-name"><span class="wb-inv">Stopwatch reading</span>As found - High load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="stopwatch_reading_as_found_high_load" name="stopwatch_reading_as_found_high_load" type="text" size="50" /> 
+					</div> 
+				
+					</div>	
+					</div>
+				</div>	
+				<div class="col-md-6">
+					<div class="panel panel-default mceg-card" id="006b">
+					<header class="panel-heading">
+						<h3 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Stopwatch reading: As left</h3>
+					</header>	
+					<div class="panel-body">	
+						
+					<div class="form-group">
+					<label for="stopwatch_reading_as_left_set"><span class="field-name"><span class="wb-inv">Stopwatch reading</span>As left - Set</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="stopwatch_reading_as_left_set" name="stopwatch_reading_as_left_set" type="text" size="50"/>  
+					</div> 
+				
+					<div class="form-group">
+					<label for="stopwatch_reading_as_left_light_load"><span class="field-name"><span class="wb-inv">Stopwatch reading</span>As left - Light load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="stopwatch_reading_as_left_light_load" name="stopwatch_reading_as_left_light_load" type="text" size="50"/>  
+					</div> 
+				
+					<div class="form-group">
+					<label for="stopwatch_reading_as_left_high_load"><span class="field-name"><span class="wb-inv">Stopwatch reading</span>As left - High load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="stopwatch_reading_as_left_high_load" name="stopwatch_reading_as_left_high_load" type="text" size="50" /> 
+					</div> 
+			
+					</div>	
+					</div>
+				</div>
+			</div>		
+			</div>	
+			
+				
+			</div>
+			</div>	
+			</div>	
+			</div>
+	
+	
+		<div class="row mrgn-tp-sm">
+			<div class="col-md-12">
+
+			<div class="panel panel-default mceg-card" id="007">
+				<header class="panel-heading">
+					<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Actual flow rate</h2>
+				</header>	
+
+			<div class="panel-body">
+				
+			<div class="row">	
+			<div class="col-md-12">
+				<div class="col-md-6">
+					<div class="panel panel-default mceg-card" id="007a">
+					<header class="panel-heading">
+						<h3 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Actual flow rate: As found</h3>
+					</header>	
+					<div class="panel-body">
+
+					<div class="form-group">
+					<label for="actual_flow_rate_as_found_set"><span class="field-name"><span class="wb-inv">Actual flow rate</span>As found - Set</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="actual_flow_rate_as_found_set" name="actual_flow_rate_as_found_set" type="text" size="50"/>  
+					</div> 
+					<div class="form-group">
+					<label for="actual_flow_rate_as_found_light_load"><span class="field-name"><span class="wb-inv">Actual flow rate</span>As found - Light load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="actual_flow_rate_as_found_light_load" name="actual_flow_rate_as_found_light_load" type="text" size="50"/>  
+					</div> 
+					<div class="form-group">
+					<label for="actual_flow_rate_as_found_high_load"><span class="field-name"><span class="wb-inv">Actual flow rate</span>As found - High load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="actual_flow_rate_as_found_high_load" name="actual_flow_rate_as_found_high_load" type="text" size="50" /> 
+					</div> 
+						
+					</div>	
+					</div>
+				</div>	
+				<div class="col-md-6">
+					<div class="panel panel-default mceg-card" id="007b">
+					<header class="panel-heading">
+						<h3 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Actual flow rate: As left</h3>
+					</header>	
+					<div class="panel-body">	
+					
+					<div class="form-group">
+					<label for="actual_flow_rate_as_left_set"><span class="field-name"><span class="wb-inv">Actual flow rate</span>As left - Set</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="actual_flow_rate_as_left_set" name="actual_flow_rate_as_left_set" type="text" size="50"/>  
+					</div> 
+				
+				
+					<div class="form-group">
+					<label for="actual_flow_rate_as_left_light_load"><span class="field-name"><span class="wb-inv">Actual flow rate</span>As left - Light load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="actual_flow_rate_as_left_light_load" name="actual_flow_rate_as_left_light_load" type="text" size="50"/>  
+					</div> 
+				
+				
+					<div class="form-group">
+					<label for="actual_flow_rate_as_left_high_load"><span class="field-name"><span class="wb-inv">Actual flow rate</span>As left - High load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="actual_flow_rate_as_left_high_load" name="actual_flow_rate_as_left_high_load" type="text" size="50" /> 
+					</div> 
+				
+					</div>	
+					</div>
+				</div>
+			</div>		
+			</div>	
+
+				
+			</div>
+			</div>	
+			</div>	
+			</div>
+		
+		<div class="row mrgn-tp-sm">
+			<div class="col-md-12">
+
+			<div class="panel panel-default mceg-card" id="008">
+				<header class="panel-heading">
+					<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Base rate = actual flow rate x PF</h2>
+				</header>	
+
+			<div class="panel-body">
+			
+			<div class="row">	
+			<div class="col-md-12">
+				<div class="col-md-6">
+					<div class="panel panel-default mceg-card" id="008a">
+					<header class="panel-heading">
+						<h3 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Base rate: As found</h3>
+					</header>	
+					<div class="panel-body">	
+						
+					<div class="form-group">
+					<label for="base_rate_as_found_set"><span class="field-name"><span class="wb-inv">Base rate</span>As found - Set</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="base_rate_as_found_set" name="base_rate_as_found_set" type="text" size="50"/>  
+					</div> 
+				
+					<div class="form-group">
+					<label for="base_rate_as_found_light_load"><span class="field-name"><span class="wb-inv">Base rate</span>As found - Light load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="base_rate_as_found_light_load" name="base_rate_as_found_light_load" type="text" size="50"/>  
+					</div> 
+				
+					<div class="form-group">
+					<label for="base_rate_as_found_high_load"><span class="field-name"><span class="wb-inv">Base rate</span>As found - High load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="base_rate_as_found_high_load" name="base_rate_as_found_high_load" type="text" size="50" /> 
+					</div> 
+				
+					</div>	
+					</div>
+				</div>	
+				<div class="col-md-6">
+					<div class="panel panel-default mceg-card" id="008b">
+					<header class="panel-heading">
+						<h3 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Base rate: As left</h3>
+					</header>	
+					<div class="panel-body">	
+					
+					<div class="form-group">
+					<label for="base_rate_as_left_set"><span class="field-name"><span class="wb-inv">Base rate</span>As left - Set</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="base_rate_as_left_set" name="base_rate_as_left_set" type="text" size="50"/>  
+					</div> 
+				
+					<div class="form-group">
+					<label for="base_rate_as_left_light_load"><span class="field-name"><span class="wb-inv">Base rate</span>As left - Light load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="base_rate_as_left_light_load" name="base_rate_as_left_light_load" type="text" size="50"/>  
+					</div> 
+				
+					<div class="form-group">
+					<label for="base_rate_as_left_high_load"><span class="field-name"><span class="wb-inv">Base rate</span>As left - High load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="base_rate_as_left_high_load" name="base_rate_as_left_high_load" type="text" size="50" /> 
+					</div> 
+				
+					</div>	
+					</div>
+				</div>
+			</div>		
+			</div>	
+				
+				
+			</div>
+			</div>	
+			</div>	
+			</div>
+	
+			<div class="row mrgn-tp-sm">
+			<div class="col-md-12">
+
+			<div class="panel panel-default mceg-card" id="009">
+				<header class="panel-heading">
+					<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Pressure error(% error) = ((R-T/T) x 100)</h2>
+				</header>	
+
+			<div class="panel-body">
+				
+			<div class="row">	
+			<div class="col-md-12">
+				<div class="col-md-6">
+					<div class="panel panel-default mceg-card" id="009a">
+					<header class="panel-heading">
+						<h3 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Pressure error: As found</h3>
+					</header>	
+					<div class="panel-body">
+					
+					<div class="form-group">
+					<label for="pressure_error_as_found_set"><span class="field-name"><span class="wb-inv">Pressure error</span>As found - Set</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="pressure_error_as_found_set" name="pressure_error_as_found_set" type="text" size="50"/>  
+					</div> 
+				
+				
+					<div class="form-group">
+					<label for="pressure_error_as_found_light_load"><span class="field-name"><span class="wb-inv">Pressure error</span>As found - Light load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="pressure_error_as_found_light_load" name="pressure_error_as_found_light_load" type="text" size="50"/>  
+					</div> 
+				
+				
+					<div class="form-group">
+					<label for="pressure_error_as_found_high_load"><span class="field-name"><span class="wb-inv">Pressure error</span>As found - High load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="pressure_error_as_found_high_load" name="pressure_error_as_found_high_load" type="text" size="50" /> 
+					</div> 
+				
+					</div>	
+					</div>
+				</div>	
+				<div class="col-md-6">
+					<div class="panel panel-default mceg-card" id="009b">
+					<header class="panel-heading">
+						<h3 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Pressure error: As left</h3>
+					</header>	
+					<div class="panel-body">	
+						
+					<div class="form-group">
+					<label for="pressure_error_as_left_set"><span class="field-name"><span class="wb-inv">Pressure error</span>As left - Set</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="pressure_error_as_left_set" name="pressure_error_as_left_set" type="text" size="50"/>  
+					</div> 
+				
+				
+					<div class="form-group">
+					<label for="pressure_error_as_left_light_load"><span class="field-name"><span class="wb-inv">Pressure error</span>As left - Light load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="pressure_error_as_left_light_load" name="pressure_error_as_left_light_load" type="text" size="50"/>  
+					</div> 
+				
+				
+					<div class="form-group">
+					<label for="pressure_error_as_left_high_load"><span class="field-name"><span class="wb-inv">Pressure error</span>As left - High load</span><!-- <strong class="required">(required)</strong>--></label>
+					<input class="form-control" id="pressure_error_as_left_high_load" name="pressure_error_as_left_high_load" type="text" size="50" /> 
+					</div> 
+				
+					</div>	
+					</div>
+				</div>
+			</div>		
+			</div>	
+	
+			</div>
+			</div>	
+			</div>	
+			</div>
+	
+		<div class="row mrgn-tp-sm">
+			<div class="col-md-12">
+
+			<div class="panel panel-default mceg-card" id="010">
+				<header class="panel-heading">
+					<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Inspection results</h2>
+				</header>	
+
+			<div class="panel-body">
+			<div class="col-md-12">
+				<div class="form-group">
+					  <fieldset class="provisional gc-chckbxrdio form-inline">
+						<legend class="required mrgn-bttm-sm">Inspection results rating<strong class="required">(required)</strong></legend>
+						<div class="label-inline">
+							<input type="radio" name="inspection_results_rating" id="verified">
+							<label for="verified">Verified</label>
+						</div>
+						<div class="label-inline">
+							<input type="radio" name="inspection_results_rating" id="rejected">
+							<label for="rejected">Rejected</label>
+						</div>
+						<div class="label-inline">
+							<input type="radio" name="inspection_results_rating" id="corrected_verified">
+							<label for="corrected_verified">Corrected &amp; verified</label>
+						</div>  
+					  </fieldset>
+				</div>
+			</div>	
+			
+			<div class="form-group mrgn-lft-md">
+				<label for="inspection_results_comments"><span class="field-name">Comments</span> </label>
+				<textarea class="form-control" id="inspection_results_comments" name="inspection_results_comments" rows="8" cols="150"></textarea>
+			</div>	
+				
+			</div>	
+		</div>
+		</div>
+		</div>	
+	
+		
+	
+		<div class="clearfix"></div>
+	
+		<!--<div class="row">
+			<div class="col-md-12">
+
+			<div class="panel panel-default mceg-card" id="002">
+				<header class="panel-heading">
+					<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">As found</h2>
+				</header>	
+
+			<div class="panel-body">	
+			<div class="col-md-12">
+			<div class="row">
+			<div class="col-md-6">
+				 <div class="form-group">
+					<label for="flow_rate" class="required"><span class="field-name">Flow rate</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" id="flow_rate" name="flow_rate" type="text" required="required" size="50" /> 
+				</div> 
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					  <fieldset class="provisional gc-chckbxrdio form-inline">
+						<legend class="required mrgn-bttm-sm">Flow rate unit <strong class="required">(required)</strong></legend>
+						<div class="label-inline">
+							<input type="radio" name="flow_units" id="cfh">
+							<label for="cfh"><acronym title="">cfh</acronym></label>
+						</div>
+						<div class="label-inline">
+							<input type="radio" name="flow_units" id="m3">
+							<label for="m3"><acronym title="">m<sup>3</sup></acronym>/hour</label>
+						</div>
+					  </fieldset>
+				</div>
+			</div>
+			</div>
+			</div>	
+				
+			<div class="col-md-12">
+			
+			<div class="form-group">
+				<label for="pressure_psi" class="required"><span class="field-name">Pressure psi</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="pressure_psi" name="pressure_psi" type="text" required="required" size="50" /> 
+			</div>
+			<div class="form-group">
+				<label for="temperature" class="required"><span class="field-name">Temperature F</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="temperature" name="temperature" type="text" required="required" size="50" /> 
+			</div>
+			<div class="form-group">
+				<label for="frequency" class="required"><span class="field-name">Frequency hertz</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="frequency" name="frequency" type="text" required="required" size="50" /> 
+			</div>
+			<div class="form-group">
+				<label for="kfactor" class="required"><span class="field-name">K-factor</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="kfactor" name="kfactor" type="text" required="required" size="50" /> 
+			</div>
+			<div class="form-group">
+				<label for="atmos" class="required"><span class="field-name">Atmos press (paia)</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="atmos" name="atmos" type="text" required="required" size="50" /> 
+			</div>
+			<div class="form-group">
+				<label for="gravity" class="required"><span class="field-name">Specific gravity</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="gravity" name="gravity" type="text" required="required" size="50" /> 
+			</div>
+			<div class="form-group">
+				<label for="energy" class="required"><span class="field-name">Energy (btu)</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="energy" name="energy" type="text" required="required" size="50" /> 
+			</div>
+			<div class="form-group">
+				<label for="methane" class="required"><span class="field-name">Methane (C1)</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="methane" name="methane" type="text" required="required" size="50" /> 
+			</div>
+			<div class="form-group">
+				<label for="nitrogen" class="required"><span class="field-name">Nitrogen (N2)</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="nitrogen" name="nitrogen" type="text" required="required" size="50" /> 
+			</div>	
+			<div class="form-group">
+				<label for="carbon_dioxide" class="required"><span class="field-name">Carbon dioxide (CO2)</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="carbon_dioxide" name="carbon_dioxide" type="text" required="required" size="50" /> 
+			</div>	
+			<div class="form-group">
+				<label for="ethane" class="required"><span class="field-name">Ethane (C2)</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="ethane" name="ethane" type="text" required="required" size="50" /> 
+			</div>
+			<div class="form-group">
+				<label for="propane" class="required"><span class="field-name">Propane (C3)</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="propane" name="propane" type="text" required="required" size="50" /> 
+			</div>
+			<div class="form-group">
+				<label for="ibutane" class="required"><span class="field-name">i-Butane (iC4)</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="ibutane" name="ibutane" type="text" required="required" size="50" /> 
+			</div>
+			<div class="form-group">
+				<label for="nbutane" class="required"><span class="field-name">n-Butane (nC4)</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="nbutane" name="nbutane" type="text" required="required" size="50" /> 
+			</div>
+			<div class="form-group">
+				<label for="ipentane" class="required"><span class="field-name">i-Pentane (iC5)</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="ipentane" name="ipentane" type="text" required="required" size="50" /> 
+			</div>
+			<div class="form-group">
+				<label for="npentane" class="required"><span class="field-name">n-Pentane (nC5)</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="npentane" name="npentane" type="text" required="required" size="50" /> 
+			</div>	
+			<div class="form-group">
+				<label for="nhexane" class="required"><span class="field-name">n-Hexane (C6+)</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="nhexane" name="nhexane" type="text" required="required" size="50" /> 
+			</div>	
+				
+			</div>	
+			</div>		
+		</div>
+		</div>
+		</div>	
+	
+		<div class="clearfix"></div>-->
+      		
+		<div class="form-group">
+		<button type="button" class="btn btn-default" onclick="MM_goToURL('parent','001-SL-mceg-G45-01-base-data-en.html');return document.MM_returnValue">Previous</button> 	
+		<button type="button" class="btn btn-primary" onclick="MM_goToURL('parent','001-SL-mceg-G45-01-summary-en.html');return document.MM_returnValue">Next</button> 
+		<button id="buttonSave" class="btn btn-link" type="submit" name="buttonSave">Save and close</button><span>|</span><button id="buttonCancel" name="buttonCancel" type="button" class="btn btn-link">Cancel</button>
+		</div>
+
+		
+ 
+	
+  <!-- Page content END -->
+  <div id="def-preFooter"> 
+    <!-- Write closure fall-back static file --> 
+    <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/preFooter-en.html --> 
+  </div>
+  <!-- Write closure template --> 
+  <script>
+				var defPreFooter = document.getElementById("def-preFooter");
+				defPreFooter.outerHTML = wet.builder.preFooter({
+						"dateModified": "2021-09-16",
+                        "showShare":  false,
+				        "showFeedback": false
+				});
+			</script> 
+</main>
+<div id="def-footer"> 
+  <!-- Write closure fall-back static file --> 
+  <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/appFooter-en.html --> 
+</div>
+<!-- Write closure template --> 
+<script>
+			var defFooter = document.getElementById("def-footer");
+			defFooter.outerHTML = wet.builder.appFooter({
+				"showFeatures": false
+			});
+		</script> 
+<!-- Write closure template --> 
+<script>
+			document.write(wet.builder.refFooter({
+				"isApplication": true
+			}));
+		</script>
+</body>
+</html>

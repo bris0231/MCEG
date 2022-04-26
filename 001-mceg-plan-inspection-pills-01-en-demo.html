@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Electricity &amp; Gas Inspection System</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
+<!-- Meta data--> 
+<!-- Load closure template scripts --> 
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/soyutils.js"></script> 
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/wet-en.js"></script>
+<noscript>
+<!-- Write closure fall-back static file --> 
+<!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/refTop.html -->
+</noscript>
+<!-- Write closure template --> 
+<script>
+			document.write(wet.builder.refTop({
+				"isApplication": true
+			}));
+		</script>
+<link rel="stylesheet" href="css/mceg-01.css">
+<link rel="stylesheet" href="css/mceg-02.css">
+
+	<script type="text/javascript">
+		function MM_goToURL() { //v3.0
+		  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+		  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+		}
+</script>	
+</head>
+<body vocab="https://schema.org/" typeof="WebPage">
+<div id="def-top"> 
+  <!-- Write closure fall-back static file --> 
+  <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/custommenuTop-en.html --> 
+</div>
+<!-- Write closure template --> 
+<script>
+			var defTop = document.getElementById("def-top");
+			defTop.outerHTML = wet.builder.appTop({
+				"appName": [{"text": "Electricity &amp; Gas Inspection System", "href": "#"}],
+				"lngLinks": [{"lang": "fr", "href": "apptop_custommenu-fr.html", "text": "Français"}],
+				/*"appSettings": [{"href": "#"}],*/
+		        "signOut": [{"href": "#"}],
+				"menuPath": "menu/mceg-menu-006-en.html"
+			});
+		</script>
+<main role="main" property="mainContentOfPage" class="container"> 
+  
+  <!-- Page content START -->
+  <h1 property="name" id="wb-cont" class="mrgn-bttm-0">Plan inspection</h1>
+  <div class="mceg-user-bg mrgn-tp-0">
+    <div class="container1">
+      <div class="mrgn-tp-0 mrgn-bttm-0 text-right"><span class="mceg-user-name1"><span class="fas fa-user-circle fa-lg mrgn-rght-sm"></span> Elizabeth Cotten</span></div>
+    </div>
+  </div>
+  <!-- Page title corresponds with title metadata data  --> 
+	
+	<div class="mrgn-tp-md">
+	<ul class="nav nav-pills nav-justified">
+	<li class="active"><a href="#">1. Client selection</a></li>
+	<li><a href="001-mceg-inspection-01-installation-en.html">2. Installation</a></li>
+	<li><a href="#">3. Summary</a></li>
+	<li><a href="#">4. Certificate</a></li>	
+	<li><a href="#">5. Email</a></li>		
+	</ul>
+	</div>
+	
+	<div class="row mrgn-tp-lg mrgn-bttm-lg">
+	<div class="col-md-12">
+		
+    <div class="panel panel-default mceg-card" id="001">
+		<header class="panel-heading">
+	   	<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Utility company information</h2>
+	  	</header>	
+      
+		
+      <div class="panel-body mrgn-lft-md">
+
+		<div class="form-group">
+			<label for="utility_company" class="required">Utility company <strong class="required">(required)</strong></label>
+			<input class="form-control" type="text" id="utility_company" name="utility_company" list="utility_company_suggestions" placeholder="Select utility company"/>
+			<datalist id="utility_company_suggestions">
+			<!--[if lte IE 9]><select><![endif]-->
+			<option label="BC Hydro" value="BC Hydro"></option>
+			<option label="Hydro Ottawa" value="Hydro Ottawa"></option>
+			<!--[if lte IE 9]></select><![endif]-->
+			</datalist>
+		  	</div>
+			
+			<div class="form-group">
+			<label for="project" class="required"><span class="field-name">Project</span> <strong class="required">(required)</strong></label>
+			<select class="form-control" id="project" name="project" autocomplete="projects" required="required">
+				<option label="Select a project"></option>
+				<option value="project1">Project 1</option>
+				<option value="project2">Project 2</option>
+				<option value="project3">Project 3</option>
+				<option value="project4">Project 4</option>
+			</select>
+			</div>
+			
+			<div class="form-group">
+			<label for="city" class="required">City <strong class="required">(required)</strong></label>
+			<input class="form-control" type="text" id="city" name="city" list="city_suggestions" placeholder="Select city"/>
+			<datalist id="city_suggestions">
+			<!--[if lte IE 9]><select><![endif]-->
+			<option label="Barrie" value="Barrie"></option>
+			<option label="Calgary" value="Calgary"></option>
+			<option label="Charlottetown" value="Charlottetown"></option>
+			<option label="Chibougamau" value="Chibougamau"></option>
+			<option label="Chilliwack" value="Chilliwack"></option>
+			<option label="Cold Lake" value="Cold Lake"></option>
+			<option label="Dorval" value="Dorval"></option>
+			<option label="Edmonton" value="Edmonton"></option>
+			<option label="Flin Flon" value="Flin Flon"></option>
+			<option label="Hamilton" value="Hamilton"></option>
+			<option label="Iqualuit" value="Iqualuit"></option>
+			<option label="Ottawa" value="Ottawa"></option>
+			<option label="Miramichi" value="Miramichi"></option>
+			<option label="Montreal" value="Montreal"></option>
+			<option label="Red Deer" value="Red Deer"></option>
+			<option label="St. John" value="St. John"></option>
+			<option label="St. John's" value="St. John's"></option>
+			<option label="Toronto" value="Toronto"></option>
+			<option label="Vancouver" value="Vancouver"></option>
+			<option label="Whitehorse" value="Whitehorse"></option>
+			<option label="Winnipeg" value="Winnipeg"></option>
+			<option label="Yellowknife" value="Yellowknife"></option>
+			<!--[if lte IE 9]></select><![endif]-->
+			</datalist>
+		  	</div>
+			
+			<div class="form-group">
+			<label for="district">District</label>
+			<input class="form-control" type="text" id="district" name="district" list="district_suggestions" placeholder="Select district"/>
+			<datalist id="district_suggestions">
+			<!--[if lte IE 9]><select><![endif]-->
+			<option label="Nanaimo" value="Nanaimo"></option>
+			<!--[if lte IE 9]></select><![endif]-->
+			</datalist>
+		  	</div>
+		  
+		  <div class="form-group">
+			<label for="client" class="required">Client <strong class="required">(required)</strong></label>
+			<input class="form-control" type="text" id="client" name="client" list="client_suggestions" placeholder="Select client"/>
+			<datalist id="client_suggestions">
+			<!--[if lte IE 9]><select><![endif]-->
+			<option label="ABC Company" value="ABC Company"></option>
+			<!--[if lte IE 9]></select><![endif]-->
+			</datalist>
+		</div>
+	
+	</div>
+	</div>
+	</div>	
+	</div>	
+  	
+		
+	<!--<div class="mrgn-tp-lg">
+	<div class="row mrgn-tp-lg mrgn-bttm-lg">
+	<div class="col-md-12">
+		
+    <div class="mceg-card" id="001">
+      <div class="mceg-header mceg-sceduled">
+        <div class="row">
+			<div class="col-xs-12">
+				<h2 class="mrgn-tp-sm h3">Client information</h2>
+			</div>
+		</div>	
+      </div>
+		
+      <div class="mceg-content mrgn-lft-md">
+
+		<div class="form-group">
+			<label for="client" class="required">Client <strong class="required">(required)</strong></label>
+			<input class="form-control" type="text" id="client" name="client" list="client_suggestions" placeholder="Select client"/>
+			<datalist id="client_suggestions">
+			<!--[if lte IE 9]><select><![endif]-->
+		<!--	<option label="ABC Company" value="ABC Company"></option>-->
+			<!--[if lte IE 9]></select><![endif]-->
+			<!--</datalist>
+		</div>-->
+			
+			<!--<div class="form-group">
+			<label for="trade_sector" class="required"><span class="field-name">Trade sector</span> <strong class="required">(required)</strong></label>
+			<select class="form-control" id="trade_sector" name="trade_sector" autocomplete="trade_sector" required="required">
+				<option label="Select a project"></option>
+				<option value="project1">Municipal</option>
+				<option value="project2">Project 2</option>
+				<option value="project3">Project 3</option>
+				<option value="project4">Project 4</option>
+			</select>
+			</div>-->
+				
+	<!--	</div>
+		</div>
+		</div>	
+		</div>	
+  		</div>-->
+		
+	
+	<div class="row mrgn-tp-lg mrgn-bttm-lg">
+	<div class="col-md-12">
+	
+	<div class="panel panel-default mceg-card" id="002">
+		<header class="panel-heading">
+	   	<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Client contact information</h2>
+	  	</header>	
+      
+		
+      <div class="panel-body mrgn-lft-md">
+		  
+
+		<div class="form-group">
+			<label for="first_name" class="required"><span class="field-name">First name</span> <strong class="required">(required)</strong></label>
+			<input class="form-control" id="first_name" name="first_name" type="text" autocomplete="given-name" required="required" data-rule-minlength="2" />
+		</div>
+			
+		<div class="form-group">
+			<label for="last_name" class="required"><span class="field-name">Last name</span> <strong class="required">(required)</strong></label>
+			<input class="form-control" id="last_name" name="last_name" type="text" autocomplete="family-name" required="required" data-rule-minlength="2" />
+		</div>
+			
+		<div class="form-group">
+			<label for="telephone" class="required"><span class="field-name">Telephone number (including area code)</span> <strong class="required">(required)</strong></label>
+			<input class="form-control" id="telephone" name="telephone" type="tel" autocomplete="tel" required="required" data-rule-phoneUS="true" />
+		</div>
+			
+		<div class="form-group">
+			<label for="email" class="required"><span class="field-name">Email address</span> (yourname@domain.com) <strong class="required">(required)</strong></label>
+			<input class="form-control" id="email" name="email" type="email" autocomplete="email" required="required" />
+		</div>
+			
+		</div>
+		</div>	
+		</div>	
+  		</div>
+		
+		<div class="mrgn-tp-lg">
+		<div class="row mrgn-tp-lg mrgn-bttm-lg">
+		<div class="col-md-12">
+			
+		<div class="panel panel-default mceg-card" id="003">
+			<header class="panel-heading">
+			<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Inspection information</h2>
+			</header>	
+      
+      		<div class="panel-body mrgn-lft-md">	
+
+			<div class="form-group">
+				<label for="inspection_date" class="required"><span class="field-name">Inspection date</span><span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="inspection_date" name="inspection_date" type="date" data-rule-dateISO="true" />
+			</div>	
+
+		   </div>
+			
+		</div>
+		</div>	
+		</div>	
+  		
+		
+		
+	
+	
+	
+		
+		
+		<div class="form-group">
+		<button type="button" class="btn btn-primary" onclick="MM_goToURL('parent','001-mceg-inspection-01-installation-en.html');return document.MM_returnValue">Next</button> 
+		<!--<button id="buttonSave" class="btn btn-link" type="submit" name="buttonSave">Save and close</button>
+		<span>|</span>--><button id="buttonCancel" name="buttonCancel" type="button" class="btn btn-link">Cancel</button>
+		</div>
+
+</div>
+	
+  <!-- Page content END -->
+  <div id="def-preFooter"> 
+    <!-- Write closure fall-back static file --> 
+    <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/preFooter-en.html --> 
+  </div>
+  <!-- Write closure template --> 
+  <script>
+				var defPreFooter = document.getElementById("def-preFooter");
+				defPreFooter.outerHTML = wet.builder.preFooter({
+						"dateModified": "2021-09-16",
+                        "showShare":  false,
+				        "showFeedback": false
+				});
+			</script> 
+</main>
+<div id="def-footer"> 
+  <!-- Write closure fall-back static file --> 
+  <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/appFooter-en.html --> 
+</div>
+<!-- Write closure template --> 
+<script>
+			var defFooter = document.getElementById("def-footer");
+			defFooter.outerHTML = wet.builder.appFooter({
+				"showFeatures": false
+			});
+		</script> 
+<!-- Write closure template --> 
+<script>
+			document.write(wet.builder.refFooter({
+				"isApplication": true
+			}));
+		</script>
+</body>
+</html>

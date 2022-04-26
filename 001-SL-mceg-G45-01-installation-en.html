@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Electricity &amp; Gas Inspection System</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
+<!-- Meta data--> 
+<!-- Load closure template scripts --> 
+	
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/soyutils.js"></script> 
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/wet-en.js"></script>
+
+<noscript>
+<!-- Write closure fall-back static file --> 
+<!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/refTop.html -->
+</noscript>
+<!-- Write closure template --> 
+<script>
+			document.write(wet.builder.refTop({
+				"isApplication": true
+			}));
+		</script>
+<link rel="stylesheet" href="css/mceg-01.css">
+<link rel="stylesheet" href="css/mceg-02.css">
+
+<script type="text/javascript">
+		function MM_goToURL() { //v3.0
+		  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+		  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+		}
+</script>
+	
+<script type="text/javascript">	
+function myFunction() {
+  // Get the checkbox
+  var checkBox = document.getElementById("rejected");
+  // Get the output text
+  var text = document.getElementById("text");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+</script>
+	
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" rel="stylesheet">	
+</head>
+<body vocab="https://schema.org/" typeof="WebPage">
+<div id="def-top"> 
+  <!-- Write closure fall-back static file --> 
+  <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/custommenuTop-en.html --> 
+</div>
+<!-- Write closure template --> 
+<script>
+			var defTop = document.getElementById("def-top");
+			defTop.outerHTML = wet.builder.appTop({
+				"appName": [{"text": "Electricity &amp; Gas Inspection System", "href": "#"}],
+				"lngLinks": [{"lang": "fr", "href": "apptop_custommenu-fr.html", "text": "Français"}],
+				/*"appSettings": [{"href": "#"}],*/
+		        "signOut": [{"href": "#"}],
+				"menuPath": "menu/mceg-menu-006-en.html"
+			});
+		</script>
+<main role="main" property="mainContentOfPage" class="container"> 
+  
+  <!-- Page content START -->
+  <h1 property="name" id="wb-cont" class="mrgn-bttm-0">G-45 - Inspection information</h1>
+  <div class="mceg-user-bg mrgn-tp-0">
+    <div class="container1">
+      <div class="mrgn-tp-0 mrgn-bttm-0 text-right"><span class="mceg-user-name1"><span class="fas fa-user-circle fa-lg mrgn-rght-sm"></span> Elizabeth Cotten</span></div>
+    </div>
+  </div>
+  <!-- Page title corresponds with title metadata data  --> 
+	
+  	<div class="mrgn-tp-md">
+	<ul class="nav nav-pills nav-justified">
+	<li><a href="001-SL-mceg-G45-01-en.html">1. Inspection details</a></li>
+	<li class="active"><a href="001-SL-mceg-G45-01-installation-en.html">2. Installation details</a></li>
+	<li><a href="001-SL-mceg-G45-01-base-data-en.html">3. Base data</a></li>
+	<li><a href="001-SL-mceg-G45-01-test-data-en.html">4. Test data</a></li>		
+	<li><a href="001-SL-mceg-inspection-01-summary-01-en.html">5. Summary</a></li>
+	<li><a href="001-SL-mceg-inspection-01-certificate-01-en.html">6. Certificate</a></li>	
+	<li><a href="001-SL-mceg-inspection-01-email-01-en.html">7. Email</a></li>		
+	</ul>
+	</div>
+	
+	
+	<div class="row mrgn-tp-lg">
+	<div class="col-md-12">
+		
+	<div class="panel panel-default mceg-card" id="001">
+			<header class="panel-heading">
+			<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Classification and measuring information</h2>
+			</header>	
+      
+      		<div class="panel-body mrgn-lft-md">
+			
+			<div class="form-group">
+			<label for="measuring_apparatus" class="required">Measuring apparatus <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="measuring_apparatus" name="measuring_apparatus" list="measuring_apparatus_suggestions" placeholder="Start typing measuring apparatus" size="45"/>
+			<datalist id="measuring_apparatus_suggestions">
+			<!--[if lte IE 9]><select><![endif]-->
+			<option label="G2424" value="G2424"></option>		
+			<option label="VS1056" value="VS1056"></option>
+			<!--[if lte IE 9]></select><![endif]-->
+			</datalist>
+		  	</div>
+				
+			<!--<div class="form-group">
+			  <fieldset class="provisional gc-chckbxrdio form-inline">
+				<legend class="required mrgn-bttm-sm">Measurement circuit wiring (adheres to standard drawing) <strong class="required">(required)</strong></legend>
+				<div class="label-inline">
+					<input id="measurement_circuit_wiring_standard" type="radio" name="measurement_circuit_wiring">
+					<label for="measurement_circuit_wiring_standard">Standard</label>
+				</div>
+				<div class="label-inline">
+					<input id="measurement_circuit_wiring_non_standard" type="radio" name="measurement_circuit_wiring">
+					<label for="measurement_circuit_wiring_non_standard">Non-standard</label>
+				</div>
+				 <div class="label-inline">
+					<input id="measurement_circuit_wiring_rejected" type="radio" name="measurement_circuit_wiring">
+					<label for="measurement_circuit_wiring_rejected">Rejected</label>
+				</div>
+				
+			  </fieldset>
+			  </div>-->
+			
+		</div>	
+	  </div>
+	</div>	
+	
+	</div>		
+	
+	
+	<!--<div class="row">
+	<div class="col-md-12">
+	<div class="panel panel-default mceg-card" id="002">
+			<header class="panel-heading">
+			<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Primary information</h2>
+		</header>	
+      
+      		<div class="panel-body mrgn-lft-md">	
+
+			
+			  <div class="form-group">
+			
+				<div class="form-group">
+					<label for="volts" class="required"><span class="field-name">Volts</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" id="volts" name="primary" type="text" required="required" data-rule-minlength="6" size="6" maxlength="6"  />
+				</div>
+				<div class="form-group">
+					<label for="amps" class="required"><span class="field-name">Amperes</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" id="amps" name="primary" type="text" required="required" data-rule-minlength="3" size="6" maxlength="6"  /> 
+				</div>
+				<div class="form-group">
+					<label for="hertz" class="required"><span class="field-name">Hertz</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" id="hertz" name="primary" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  />
+				</div>
+				<div class="form-group">
+					<label for="phase" class="required"><span class="field-name">Phase</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" id="phase" name="primary" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  />  
+				</div>  
+				<div class="form-group">
+				  <label for="wire" class="required"><span class="field-name">Wire</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" id="wire" name="primary" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  /> 
+				</div>
+			  
+			  </div>	  
+			
+		  
+			  <div class="form-group">
+			  <fieldset class="provisional gc-chckbxrdio form-inline">
+				<legend class="required mrgn-bttm-sm">Service type <strong class="required">(required)</strong></legend>
+				<div class="label-inline">
+					<input id="service_wye" type="radio" name="service_type">
+					<label for="service_wye">Wye</label>
+				</div>
+				
+				<div class="label-inline">
+					<input id="network_delta" type="radio" name="service_type">
+					<label for="network_delta">Delta</label>
+				</div>
+				 <div class="label-inline">
+					<input id="network_single_phase_network" type="radio" name="service_type">
+					<label for="network_single_phase_network">Single-phase network</label>
+				</div>
+				 <div class="label-inline">
+					<input id="network_single_phase_residential" type="radio" name="service_type">
+					<label for="network_single_phase_residential">Single-phase residential</label>
+				</div> 
+			  </fieldset>
+			  </div>
+				
+			</div>	
+	  </div>	
+	  </div>	
+		
+  </div>-->
+			
+		
+		<div class="clearfix"></div> 
+		  
+	  	
+ <!-- <div class="row">
+		<div class="col-md-12">
+	<div class="panel panel-default mceg-card" id="003">
+		  <header class="panel-heading">
+			<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Meter(s)</h2>
+		</header>	
+      
+      	<div class="panel-body mrgn-lft-md">	
+		
+    	<p>Press the <strong>Add meter</strong> button below to add to the list of meter(s).</p>
+			
+		<div class="pull-left mrgn-bttm-md mrgn-tp-md">
+			<a class="btn btn-default" title="Add meter" role="button" href="001-SL-mceg-inspection-01-installation-add-meter-en.html"><span class="fas fa-plus"></span><span class="mrgn-lft-sm">Add meter</span></a>
+		</div>	
+		
+		<div class="clearfix"></div>
+			
+		
+		<div class="table-responsive">
+		<table class="wb-tables table table-striped table-hover table-border dataTable" data-wb-tables="{"paging" : false, "searching" : false, "info": false}" id="delegate_table" aria-describedby="delegate_table" role="grid" >
+        <caption class="wb-inv">Meter(s)</caption>
+       	<thead>
+		<tr role="row">
+        <th aria-label="Meter inspection number" class="sorting_disabled">Meter inspection number</th>
+        <th aria-label="Manufacturer: activate for ascending sort" class="sorting_disabled" aria-sort="ascending">Manufacturer</th>
+		<th aria-label="Model: activate for ascending sort" aria-sort="ascending">Model</th>
+		<th aria-label="Role: activate for ascending sort" aria-sort="ascending">Serial number</th>
+        <th aria-label="Actions" class="sorting_disabled">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+		<td colspan="5">There are currently no meters added to the list.
+		</td>
+		</tr>
+        
+        
+        </tbody>
+	</table>
+		</div>
+	
+		</div>		  
+	  </div>
+  </div>
+</div>-->
+	
+<div class="panel panel-default mceg-card" id="002">
+		<a id="meter_information"></a>
+			<header class="panel-heading">
+			<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Meter information</h2>
+			</header>	
+      
+      	<div class="panel-body mrgn-lft-md">
+			
+			<div class="col-md-12">
+				 <div class="form-group">
+				  <fieldset class="provisional gc-chckbxrdio form-inline">
+					<legend class="required mrgn-bttm-sm">Meter unit <strong class="required">(required)</strong></legend>
+					<div class="label-inline">
+						<input type="radio" name="meter_units" id="metric">
+						<label for="metric">Metric</label>
+					</div>
+					<div class="label-inline">
+						<input type="radio" name="meter_units" id="imperial">
+						<label for="imperial">Imperial</label>
+					</div>
+					<div class="label-inline">
+						<input type="radio" name="meter_units" id="standard">
+						<label for="standard">Standard</label>
+					</div>
+					<div class="label-inline">
+						<input type="radio" name="meter_units" id="tc">
+						<label for="tc"><acronym title="TC">TC</acronym></label>
+					</div>  
+				  </fieldset>
+				  </div>
+			</div>
+		
+			<div class="form-group">
+			<label for="meter_inspection_number" class="required">Meter inspection number <strong class="required">(required)</strong></label> 
+			<input class="form-control" id="meter_inspection_number" name="meter_inspection_number" type="text" required="required" size="50"/>	
+		  	</div>
+				
+			
+				
+			<div class="form-group">
+			<label for="manufacturer" class="required">Manufacturer <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="manufacturer" name="manufacturer" list="manufacturer_suggestions" placeholder="Start typing manufacturer" size="50"/>
+			<datalist id="manufacturer_suggestions">
+			<!--[if lte IE 9]><select><![endif]-->
+			<option label="" value=""></option>	
+			<option label="" value=""></option>
+			<!--[if lte IE 9]></select><![endif]-->
+			</datalist>
+		  	</div>
+			
+			<div class="form-group">
+			<label for="model" class="required">Model <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="model" name="model" list="model_suggestions" placeholder="Start typing model" size="50"/>
+			<datalist id="model_suggestions">
+			<!--[if lte IE 9]><select><![endif]-->
+			<option label="" value=""></option>
+			<!--[if lte IE 9]></select><![endif]-->
+			</datalist>
+		  	</div>
+			
+			<div class="form-group">
+			<label for="serial_number" class="required">Serial number <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="serial_number" name="serial_number" required="required" size="50"/>
+		  	</div>
+			
+			<div class="form-group">
+			<label for="rated_cap_air" class="required">Rated capacity (air) <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="rated_cap_air" name="rated_cap_air" required="required" size="50"/>
+		  	</div>
+			
+			<div class="form-group">
+			<label for="rated_pressure" class="required">Rated pressure (maximum) <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="rated_pressure" name="rated_pressure" required="required" size="50"/>
+		  	</div>
+			
+			<!--<div class="form-group">
+			  <label for="noa" class="required"><span class="field-name">Notice of approval number</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="noa" name="noa" type="text" required="required" size="50" maxlength="50"  /> 
+			</div>-->
+		
+			
+			
+			  
+			<div class="form-group">
+				<label for="year" class="required"><span class="field-name">Seal year</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="year" name="seal" type="text" required="required" data-rule-minlength="4" size="4" maxlength="4"  />
+			</div>
+			<div class="form-group">
+				<label for="year_expires" class="required"><span class="field-name">Seal expiration year</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="year_expires" name="seal" type="text" required="required" data-rule-minlength="4" size="4" maxlength="4"  />
+			</div>
+			
+			<div class="form-group">
+			<label for="reading" class="required">Reading <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="reading" name="reading" required="required" size="50"/>
+		  	</div>
+			
+			<div class="form-group">
+			<label for="main_line_pressure" class="required">Main line pressure <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="main_line_pressure" name="main_line_pressure" required="required" size="50"/>
+		  	</div>
+			
+				
+		</div>	
+		</div>
+	
+	
+	<div class="panel panel-default mceg-card" id="003">
+		<a id="meter_information"></a>
+			<header class="panel-heading">
+			<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Regulator manufactuer information</h2>
+			</header>	
+      
+      	<div class="panel-body mrgn-lft-md">
+			
+			<details open="open">
+				<summary>Main</summary>
+				
+				
+			<div class="form-group">
+			<label for="stage1_regulator_manufacturer" class="required">Manufacturer <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="stage1_regulator_manufacturer" name="stage1_regulator_manufacturer" list="stage1_regulator_manufacturer_suggestions" placeholder="Start typing manufacturer" size="50"/>
+			<datalist id="stage1_regulator_manufacturer_suggestions">
+			<!--[if lte IE 9]><select><![endif]-->
+			<option label="SCHL" value="SCHL"></option>	
+			<option label="" value=""></option>
+			<!--[if lte IE 9]></select><![endif]-->
+			</datalist>
+		  	</div>
+			
+			<div class="form-group">
+			<label for="stage1_regulator_model" class="required">Model <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="stage1_regulator_model" name="stage1_regulator_model" list="stage1_regulator_model_suggestions" placeholder="Start typing model" size="50"/>
+			<datalist id="stage1_regulator_model_suggestions">
+			<!--[if lte IE 9]><select><![endif]-->
+			<option label="CL31" value="CL31"></option>
+			<!--[if lte IE 9]></select><![endif]-->
+			</datalist>
+		  	</div>
+			
+			<div class="form-group">
+			<label for="stage1_regulator_serial_number" class="required">Serial number <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="stage1_regulator_serial_number" name="stage1_regulator_serial_number" required="required" size="50"/>
+		  	</div>
+			
+			<div class="form-group">
+			<label for="stage1_orifice" class="required">Orifice<strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="stage1_orifice" name="stage1_orifice" required="required" size="50"/>
+		  	</div>
+			
+			<div class="form-group">	
+			<label for="stage1_spring_colour" class="required"><span class="field-name">Spring colour</span> <strong class="required">(required)</strong></label>
+			<select class="form-control" id="stage1_spring_colour" name="stage1_spring_colour" required="required">
+				<option label="Select form type"></option>
+				<option value="1">Brown</option>
+			   	<option value="0">Gray</option>
+			   	<option value="2">Orange</option>	
+				<option value="2">Yellow</option>
+				<option value="2">White</option>
+			</select>
+			</div>
+				
+			<div class="form-group">
+			<label for="stage1_inlet_connection_size" class="required">Inlet connection size<strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="stage1_inlet_connection_size" name="stage1_inlet_connection_size" required="required" size="50"/>
+		  	</div>
+			
+			<div class="form-group">
+			<label for="stage1_outlet_connection_size" class="required">Outlet connection size<strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="stage1_outlet_connection_size" name="stage1_outlet_connection_size" required="required" size="50"/>
+		  	</div>	
+			
+			<!--<div class="form-group">
+			  <label for="noa" class="required"><span class="field-name">Notice of approval number</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="noa" name="noa" type="text" required="required" size="50" maxlength="50"  /> 
+			</div>-->
+			
+			</details>
+			
+			<details>
+				<summary>Pilot</summary>
+				
+			<div class="form-group">
+			<label for="stage2_regulator_manufacturer" class="required">Manufacturer <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="stage2_regulator_manufacturer" name="stage2_regulator_manufacturer" list="stage2_regulator_manufacturer_suggestions" placeholder="Start typing manufacturer" size="50"/>
+			<datalist id="stage2_regulator_manufacturer_suggestions">
+			<!--[if lte IE 9]><select><![endif]-->
+			<option label="" value=""></option>	
+			<option label="" value=""></option>
+			<!--[if lte IE 9]></select><![endif]-->
+			</datalist>
+		  	</div>
+			
+			<div class="form-group">
+			<label for="stage2_regulator_model" class="required">Model <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="stage2_regulator_model" name="stage2_regulator_model" list="stage2_regulator_model_suggestions" placeholder="Start typing model" size="50"/>
+			<datalist id="stage2_regulator_model_suggestions">
+			<!--[if lte IE 9]><select><![endif]-->
+			<option label="" value=""></option>
+			<!--[if lte IE 9]></select><![endif]-->
+			</datalist>
+		  	</div>
+			
+			<div class="form-group">
+			<label for="stage2_regulator_serial_number" class="required">Serial number <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="stage2_regulator_serial_number" name="stage2_regulator_serial_number" required="required" size="50"/>
+		  	</div>
+			
+			<div class="form-group">
+			<label for="stage2_orifice" class="required">Orifice<strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="stage2_orifice" name="stage2_orifice" required="required" size="50"/>
+		  	</div>
+			
+			<div class="form-group">	
+			<label for="stage2_spring_colour" class="required"><span class="field-name">Spring colour</span> <strong class="required">(required)</strong></label>
+			<select class="form-control" id="stage2_spring_colour" name="stage2_spring_colour" required="required">
+				<option label="Select form type"></option>
+				<option value="1">Brown</option>
+			   	<option value="0">Gray</option>
+			   	<option value="2">Orange</option>	
+				<option value="2">Yellow</option>
+				<option value="2">White</option>
+			</select>
+			</div>
+				
+			<div class="form-group">
+			<label for="stage2_inlet_connection_size" class="required">Inlet connection size<strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="stage2_inlet_connection_size" name="stage2_inlet_connection_size" required="required" size="50"/>
+		  	</div>
+			
+			<div class="form-group">
+			<label for="stage2_outlet_connection_size" class="required">Outlet connection size<strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="stage2_outlet_connection_size" name="stage2_outlet_connection_size" required="required" size="50"/>
+		  	</div>
+				
+							
+			</details>			
+			
+			
+				
+		</div>	
+		</div>
+	
+		
+				
+		<div class="clearfix"></div>	
+			
+	
+	
+				
+	
+		<div class="clearfix"></div>
+      		
+		<div class="form-group">
+		<button type="button" class="btn btn-default" onclick="MM_goToURL('parent','001-SL-mceg-G45-01-en.html');return document.MM_returnValue">Previous</button> 	
+		<button type="button" class="btn btn-primary" onclick="MM_goToURL('parent','001-SL-mceg-G45-01-base-data-en.html');return document.MM_returnValue">Next</button> 
+		<button id="buttonSave" class="btn btn-link" type="submit" name="buttonSave">Save and close</button><span>|</span><button id="buttonCancel" name="buttonCancel" type="button" class="btn btn-link">Cancel</button>
+		</div>
+
+		
+ 
+	
+  <!-- Page content END -->
+  <div id="def-preFooter"> 
+    <!-- Write closure fall-back static file --> 
+    <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/preFooter-en.html --> 
+  </div>
+  <!-- Write closure template --> 
+  <script>
+				var defPreFooter = document.getElementById("def-preFooter");
+				defPreFooter.outerHTML = wet.builder.preFooter({
+						"dateModified": "2021-09-16",
+                        "showShare":  false,
+				        "showFeedback": false
+				});
+			</script> 
+</main>
+<div id="def-footer"> 
+  <!-- Write closure fall-back static file --> 
+  <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/appFooter-en.html --> 
+</div>
+<!-- Write closure template --> 
+<script>
+			var defFooter = document.getElementById("def-footer");
+			defFooter.outerHTML = wet.builder.appFooter({
+				"showFeatures": false
+			});
+		</script> 
+<!-- Write closure template --> 
+<script>
+			document.write(wet.builder.refFooter({
+				"isApplication": true
+			}));
+		</script>
+</body>
+</html>

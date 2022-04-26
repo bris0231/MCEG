@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Electricity &amp; Gas Inspection System</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
+<!-- Meta data--> 
+<!-- Load closure template scripts --> 
+	
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/soyutils.js"></script> 
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/wet-en.js"></script>
+
+<noscript>
+<!-- Write closure fall-back static file --> 
+<!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/refTop.html -->
+</noscript>
+<!-- Write closure template --> 
+<script>
+			document.write(wet.builder.refTop({
+				"isApplication": true
+			}));
+		</script>
+<link rel="stylesheet" href="css/mceg-01.css">
+<link rel="stylesheet" href="css/mceg-02.css">
+
+<script type="text/javascript">
+		function MM_goToURL() { //v3.0
+		  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+		  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+		}
+</script>
+	
+	
+<script type="text/javascript">	
+function myFunction() {
+  // Get the checkbox
+  var checkBox = document.getElementById("meter_result_fail");
+  // Get the output text
+  var text = document.getElementById("text");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+</script>		
+	
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" rel="stylesheet">	
+</head>
+<body vocab="https://schema.org/" typeof="WebPage">
+<div id="def-top"> 
+  <!-- Write closure fall-back static file --> 
+  <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/custommenuTop-en.html --> 
+</div>
+<!-- Write closure template --> 
+<script>
+			var defTop = document.getElementById("def-top");
+			defTop.outerHTML = wet.builder.appTop({
+				"appName": [{"text": "Electricity &amp; Gas Inspection System", "href": "#"}],
+				"lngLinks": [{"lang": "fr", "href": "apptop_custommenu-fr.html", "text": "Français"}],
+				/*"appSettings": [{"href": "#"}],*/
+		        "signOut": [{"href": "#"}],
+				"menuPath": "menu/mceg-menu-006-en.html"
+			});
+		</script>
+<main role="main" property="mainContentOfPage" class="container"> 
+  
+  <!-- Page content START -->
+  <h1 property="name" id="wb-cont" class="mrgn-bttm-0">Inspection information</h1>
+  <div class="mceg-user-bg mrgn-tp-0">
+    <div class="container1">
+      <div class="mrgn-tp-0 mrgn-bttm-0 text-right"><span class="mceg-user-name1"><span class="fas fa-user-circle fa-lg mrgn-rght-sm"></span> Elizabeth Cotten</span></div>
+    </div>
+  </div>
+  <!-- Page title corresponds with title metadata data  --> 
+	
+  	<div class="mrgn-tp-md">
+	<ul class="nav nav-pills nav-justified">
+	<li><a href="001-SL-mceg-plan-inspection-pills-01-en.html">1. Inspection details</a></li>
+	<li class="active"><a href="001-SL-mceg-inspection-01-installation-en.html">2. Installation details</a></li>
+	<li><a href="001-SL-mceg-inspection-01-summary-01-en.html">3. Summary</a></li>
+	<li><a href="#">4. Certificate</a></li>	
+	<li><a href="#">5. Email</a></li>		
+	</ul>
+	</div>
+	
+	
+	
+	<div class="row">
+	<div class="col-md-12">
+		
+	<h2 class="h3">Add meter</h2>
+		
+	<p>Complete the fields below to add a meter to the list of meter(s) to be inspected.</p>	
+	
+		
+	<div class="panel panel-default mceg-card" id="001">
+		<a id="meter_information"></a>
+			<header class="panel-heading">
+			<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Meter information</h2>
+			</header>	
+      
+      	<div class="panel-body mrgn-lft-md">	
+		
+			<div class="form-group">
+			<label for="meter_inspection_number" class="required">Meter inspection number <strong class="required">(required)</strong></label> 
+			<input class="form-control" id="meter_inspection_number" name="meter_inspection_number" type="text" required="required" size="50"/>	
+		  	</div>
+				
+			<div class="form-group mrgn-bttm-md">
+		  	
+			  
+			<div class="form-group">
+				<label for="year" class="required"><span class="field-name">Seal year</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="year" name="seal" type="text" required="required" data-rule-minlength="4" size="4" maxlength="4"  />
+			</div>
+			<div class="form-group">
+				<label for="year_expires" class="required"><span class="field-name">Seal expiration year</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="year_expires" name="seal" type="text" required="required" data-rule-minlength="4" size="4" maxlength="4"  />
+			</div>
+			
+			</div>	
+				
+			<div class="form-group">
+			<label for="manufacturer" class="required">Manufacturer <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="manufacturer" name="manufacturer" list="manufacturer_suggestions" placeholder="Start typing manufacturer" size="50"/>
+			<datalist id="manufacturer_suggestions">
+			<!--[if lte IE 9]><select><![endif]-->
+			<option label="Elster" value="Elster"></option>	
+			<option label="Itron" value="Itron"></option>
+			<!--[if lte IE 9]></select><![endif]-->
+			</datalist>
+		  	</div>
+			
+			<div class="form-group">
+			<label for="model" class="required">Model <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="model" name="model" list="model_suggestions" placeholder="Start typing model" size="50"/>
+			<datalist id="model_suggestions">
+			<!--[if lte IE 9]><select><![endif]-->
+			<option label="A3RL" value="A3RL"></option>
+			<!--[if lte IE 9]></select><![endif]-->
+			</datalist>
+		  	</div>
+			
+			<div class="form-group">
+			<label for="serial_number" class="required">Serial number <strong class="required">(required)</strong></label> 
+			<input class="form-control" type="text" id="serial_number" name="serial_number" required="required" size="50"/>
+		  	</div>
+			
+			<div class="form-group">
+			  <label for="noa" class="required"><span class="field-name">Notice of approval number</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="noa" name="noa" type="text" required="required" size="50" maxlength="50"  /> 
+			</div>
+		
+			
+			<div class="form-group">
+				<label for="volts" class="required"><span class="field-name">Volts</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="volts" name="volts" type="text" required="required" size="15" maxlength="15" />
+			</div>
+			<div class="form-group">
+				<label for="amps" class="required"><span class="field-name">Amperes</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="amps" name="amps" type="text" required="required" size="15" maxlength="15" /> 
+			</div>
+			
+			<div class="form-group">
+				<label for="multiplier" class="required"><span class="field-name">Multiplier</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="multiplier" name="multiplier" type="text" required="required" size="3" maxlength="3"  />
+			</div>
+			<div class="form-group">
+				<label for="kilowatt-hour" class="required"><span class="field-name"><a title="kilowatt-hour">Kh</a></span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="kilowatt-hour" name="kilowatt-hour" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  />
+			</div>	
+			<!--<div class="form-group">
+			  	<label for="phase" class="required"><span class="field-name">Phase</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="phase" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  />  
+			</div>  	
+			
+			<div class="form-group">
+			  <label for="wire" class="required"><span class="field-name">Wire</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="wire" name="readings" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  /> 
+			</div>-->
+			
+			<div class="form-group">
+			  <label for="elements" class="required"><span class="field-name">Elements</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="elements" name="elements" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  /> 
+			</div>
+			
+			
+				
+		</div>	
+		</div>
+		</div>	
+		</div>		
+   	 	
+		
+		
+		<div class="clearfix"></div> 	
+	
+		
+		<div class="row">
+		<div class="col-md-12">	
+		<a id="meter_readings"></a>
+		<div class="panel panel-default mceg-card" id="002">
+				<header class="panel-heading">
+				<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Meter readings</h2>
+				</header>	
+
+			<div class="panel-body mrgn-lft-md">	
+				
+			
+			
+		<!--	<div class="form-group">
+				<label for="volts" class="required"><span class="field-name">Volts</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="volts" name="readings" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  />
+			</div>
+			<div class="form-group">
+				<label for="amps" class="required"><span class="field-name">Amperes</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="amps" name="readings" type="text" required="required" data-rule-minlength="3" size="3" maxlength="3"  /> 
+			</div>
+			
+			<div class="form-group">
+				<label for="energy" class="required"><span class="field-name">Energy reading</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="energy" name="readings" type="text" required="required" size="10" maxlength="10"  />
+			</div>-->
+				
+			<div class="form-inline">
+			  <fieldset>
+				<legend class="required mrgn-bttm-sm">Energy reading <strong class="required">(required)</strong></legend>
+			  
+				<div class="label-inline">
+					<label for="kwh"><span class="field-name"><acronym title="kilowatt hour">kWh</acronym></span></label>
+					<input class="form-control" name="kwh" id="kwh" size="10" maxlength="10"> 
+				 </div>	
+				<div class="label-inline">
+					<label for="kVAh"><span class="field-name"><acronym title="kilovolt-ampere hour">kVAh</acronym></span></label>
+					<input class="form-control" name="kVAh" id="kVAh" size="10" maxlength="10"> 
+				  </div>
+				  <div class="label-inline">
+					<label for="kVArh"><span class="field-name"><acronym title="kilovolt-ampere reactive hour">kVARh</acronym></span></label>
+					<input class="form-control" name="kVArh" id="kVArh" size="10" maxlength="10"> 
+				  </div>
+				  <div class="label-inline">
+					<label for="energy_other"><span class="field-name">Other</span></label>
+					<input class="form-control" name="energy_other" id="energy_other" size="10" maxlength="10"> 
+				  
+					<!--<label for="energy_other_specify"><span class="field-name">If other, please specify:</span></label>
+					<input class="form-control" name="energy_other_specify" id="energy_other_specify" size="10" maxlength="10"> 
+				  </div>-->
+				 
+			  </fieldset>
+			  </div>
+				
+			  <div class="form-inline mrgn-tp-lg">
+			  <fieldset>
+				<legend class="mrgn-bttm-sm">Indicated demand reading</legend>
+				<div class="label-inline">
+					<label for="demand_kw"><acronym title="kilowatt">kW</acronym></label>
+					<input class="form-control" name="demand_kw" id="demand_kw" size="10" maxlength="10">
+				</div>
+				<div class="label-inline">
+					<label for="demand_kvA"><acronym title="kilovolt-ampere">kVA</acronym></label>
+					<input class="form-control" name="demand_kvA" id="demand_kvA" size="10" maxlength="10">
+				</div>
+				 <div class="label-inline">
+					<label for="demand_kvar"><acronym title="kilovolt-ampere reactive">kVAR</acronym></label>
+					<input class="form-control" name="demand_kvar" id="demand_kvar" size="10" maxlength="10">
+				</div>  
+				<div class="label-inline">
+					<label for="demand_other">Other</label>	
+					<input class="form-control" name="demand_other" id="demand_other" size="10" maxlength="10"> 
+				</div> 
+				<!--<div class="form-group">	 
+					<label for="demand_other_specify">If other, please specify:</label>						
+					<input class="form-control" name="demand_other_specify" id="demand_other_specify" size="10" maxlength="10"> 
+				</div> -->
+				 
+			  </fieldset>
+			  </div>
+				
+				<div class="form-inline mrgn-tp-lg">
+			  <fieldset>
+				<legend class="mrgn-bttm-sm">Maximum demand reading</legend>
+				<div class="label-inline">
+					<label for="max_demand_kw"><acronym title="kilowatt">kW</acronym></label>
+					<input class="form-control" name="max_demand_kw" id="max_demand_kw" size="10" maxlength="10">
+				</div>
+				<div class="label-inline">
+					<label for="max_demand_kvA"><acronym title="kilovolt-ampere">kVA</acronym></label>
+					<input class="form-control" name="max_demand_kvA" id="max_demand_kvA" size="10" maxlength="10">
+				</div>
+				 <div class="label-inline">
+					<label for="max_demand_kvar"><acronym title="kilovolt-ampere reactive">kVAR</acronym></label>
+					<input class="form-control" name="max_demand_kvar" id="max_demand_kvar" size="10" maxlength="10">
+				</div>  
+				<div class="label-inline">
+					<label for="max_demand_other">Other</label>	
+					<input class="form-control" name="max_demand_other" id="max_demand_other" size="10" maxlength="10"> 
+				</div> 
+				<!--<div class="form-group">	 
+					<label for="demand_other_specify">If other, please specify:</label>						
+					<input class="form-control" name="demand_other_specify" id="demand_other_specify" size="10" maxlength="10"> 
+				</div> -->
+				 
+			  </fieldset>
+			  </div>
+			
+			<!--<div class="form-group mrgn-tp-xl">
+			  	<label for="indicated_demand"><span class="field-name">Indicated demand</span> </label>
+				<input class="form-control" id="indicated_demand" name="indicated_demand" type="text" required="required" size="10" maxlength="10"  />  
+			</div>-->
+				
+			<!--	
+			<div class="form-group">
+			  <fieldset class="provisional gc-chckbxrdio form-inline">
+				<legend class="mrgn-bttm-sm">Indicated demand units</legend>
+				<div class="label-inline">
+					<input type="radio" name="demand_units" id="kw_kvar">
+					<label for="kw_kvar"><acronym title="kilowatt">kW</acronym> and <acronym title="kilovolt-ampere reactive">kVAR</acronym></label>
+				</div>
+				<div class="label-inline">
+					<input type="radio" name="demand_units" id="kw_kva">
+					<label for="kw_kva"><acronym title="kilowatt">kW</acronym> and <acronym title="kilovolt-ampere">kVA</acronym></label>
+				</div>
+				 <div class="label-inline">
+					<input type="radio" name="demand_units" id="kvA">
+					<label for="kvA"><acronym title="kilovolt-ampere">kVA</acronym></label>
+				</div>
+				 <div class="label-inline">
+					<input type="radio" name="demand_units" id="kw">
+					<label for="kw"><acronym title="kilowatt">kW</acronym></label>
+				</div> 
+			  </fieldset>
+			</div>	
+			
+			<div class="form-group mrgn-tp-xl">
+			  <label for="max_demand"><span class="field-name">Maximum demand</span></label>
+			  <input class="form-control" id="max_demand" name="readings" type="text" required="required" size="10" maxlength="10"  /> 
+			</div>
+			<div class="form-group">
+			  <fieldset class="provisional gc-chckbxrdio form-inline">
+				<legend class="mrgn-bttm-sm">Maximum demand units</legend>
+				<div class="label-inline">
+					<input type="radio" name="max_demand_units" id="max_kw_kvar">
+					<label for="max_kw_kvar"><acronym title="kilowatt">kW</acronym> and <acronym title="kilovolt-ampere reactive">kVAR</acronym></label>
+				</div>
+				<div class="label-inline">
+					<input type="radio" name="max_demand_units" id="max_kw_kva">
+					<label for="max_kw_kva"><acronym title="kilowatt">kW</acronym> and <acronym title="kilovolt-ampere">kVA</acronym></label>
+				</div>
+				 <div class="label-inline">
+					<input type="radio" name="max_demand_units" id="max_kvA">
+					<label for="max_kvA"><acronym title="kilovolt-ampere">kVA</acronym></label>
+				</div>
+				 <div class="label-inline">
+					<input type="radio" name="max_demand_units" id="max_kw">
+					<label for="max_kw"><acronym title="kilowatt">kW</acronym></label>
+				</div> 
+			  </fieldset>
+			</div>
+			-->	
+				
+			<div class="form-group mrgn-tp-lg">
+			  <label for="error_percentage" class="required"><span class="field-name">Error percentage</span> <strong class="required">(required)</strong></label>
+				<input class="form-control" id="error_percentage" name="readings" type="text" required="required" data-rule-minlength="10" size="10" maxlength="10"  /> 
+			</div>
+				
+		</div>	
+		</div>
+		</div>	
+		</div>			
+				
+		
+		<div class="row">
+		<div class="col-md-12">	
+		<a id="meter_result"></a>
+		<div class="panel panel-default mceg-card" id="003">
+				<header class="panel-heading">
+				<h2 class="panel-title h3 mrgn-tp-sm mrgn-bttm-sm">Meter rating</h2>
+				</header>	
+
+			<div class="panel-body mrgn-lft-md">
+				
+			 
+			<div class="form-group">
+			  <fieldset class="provisional gc-chckbxrdio form-inline">
+				<legend class="required mrgn-bttm-sm">Rating <strong class="required">(required)</strong></legend>
+				<div class="label-inline">
+					<input id="meter_result_pass" type="radio" name="meter_result">
+					<label for="meter_result_pass">Verified</label>
+				</div>
+				<div class="label-inline">
+					<input id="meter_result_fail" type="radio" name="meter_result" onclick="myFunction()">
+					<label for="meter_result_fail">Rejected</label>
+				</div>
+			  </fieldset>
+			  </div>	
+				
+
+			
+			<div id="text" style="display:none">
+				<div class="row mrgn-lft-sm mrgn-bttm-md">
+					<label for="meter_result_fail_reason" class="required"><span class="field-name">Reason for rejection</span> <strong class="required">(required)</strong></label>
+				  	<textarea class="form-control" id="meter_result_fail_reason" rows="8" cols="100" required="required"> 
+					</textarea>	
+				</div>
+			</div>
+		  
+		
+				
+		</div>	
+		</div>
+		</div>	
+		</div>		
+   	 	
+		
+		
+		<div class="clearfix"></div> 		
+		
+		<div class="form-group">
+			
+			<button type="button" class="btn btn-primary" onclick="MM_goToURL('parent','001-SL-mceg-inspection-01-installation-saved-meter-info-en.html#meters');return document.MM_returnValue">Save</button>	
+			<button id="buttonSave" class="btn btn-link" type="submit" name="buttonSave">Save and close</button><span>|</span><button id="buttonCancel" name="buttonCancel" type="button" class="btn btn-link" onclick="MM_goToURL('parent','001-SL-mceg-inspection-01-installation-en.html');return document.MM_returnValue">Cancel</button>	
+		
+		</div>
+
+		
+ 
+	
+  <!-- Page content END -->
+  <div id="def-preFooter"> 
+    <!-- Write closure fall-back static file --> 
+    <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/preFooter-en.html --> 
+  </div>
+  <!-- Write closure template --> 
+  <script>
+				var defPreFooter = document.getElementById("def-preFooter");
+				defPreFooter.outerHTML = wet.builder.preFooter({
+						"dateModified": "2021-09-16",
+                        "showShare":  false,
+				        "showFeedback": false
+				});
+			</script> 
+</main>
+<div id="def-footer"> 
+  <!-- Write closure fall-back static file --> 
+  <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/appFooter-en.html --> 
+</div>
+<!-- Write closure template --> 
+<script>
+			var defFooter = document.getElementById("def-footer");
+			defFooter.outerHTML = wet.builder.appFooter({
+				"showFeatures": false
+			});
+		</script> 
+<!-- Write closure template --> 
+<script>
+			document.write(wet.builder.refFooter({
+				"isApplication": true
+			}));
+		</script>
+</body>
+</html>

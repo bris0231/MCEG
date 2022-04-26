@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Electricity &amp; Gas Inspection System</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
+<!-- Meta data--> 
+<!-- Load closure template scripts --> 
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/soyutils.js"></script> 
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/wet-en.js"></script>
+<noscript>
+<!-- Write closure fall-back static file --> 
+<!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/refTop.html -->
+</noscript>
+<!-- Write closure template --> 
+<script>
+			document.write(wet.builder.refTop({
+				"isApplication": true
+			}));
+		</script>
+<link rel="stylesheet" href="css/mceg-01.css">
+<link rel="stylesheet" href="css/mceg-02.css">
+</head>
+<body vocab="https://schema.org/" typeof="WebPage">
+<div id="def-top"> 
+  <!-- Write closure fall-back static file --> 
+  <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/custommenuTop-en.html --> 
+</div>
+<!-- Write closure template --> 
+<script>
+			var defTop = document.getElementById("def-top");
+			defTop.outerHTML = wet.builder.appTop({
+				"appName": [{"text": "Electricity &amp; Gas Inspection System", "href": "#"}],
+				"lngLinks": [{"lang": "fr", "href": "apptop_custommenu-fr.html", "text": "Français"}],
+				/*"appSettings": [{"href": "#"}],*/
+		        "signOut": [{"href": "#"}],
+				"menuPath": "menu/mceg-menu-006-en.html"
+			});
+		</script>
+<main role="main" property="mainContentOfPage" class="container"> 
+  
+  <!-- Page content START -->
+  <h1 property="name" id="wb-cont" class="mrgn-bttm-0"><span class="fas fa-search mrgn-rght-sm"></span> Find inspections</h1>
+  <div class="mceg-user-bg mrgn-tp-0">
+    <div class="container1">
+      <div class="mrgn-tp-0 mrgn-bttm-0 text-right"><span class="mceg-user-name1"><span class="fas fa-user-circle fa-lg mrgn-rght-sm"></span> Elizabeth Cotten</span></div>
+    </div>
+  </div>
+  <!-- Page title corresponds with title metadata data  -->
+	
+	
+	<div class="mrgn-tp-md">
+	
+	<div class="row">
+		<p class="mrgn-lft-md">Use keywords and filters to refine your results.</p>		
+		
+			<div class="col-md-3">
+				
+				<div class="panel panel-default mceg-card" id="001">
+				<header class="panel-heading">
+					<h2 class="panel-title h4 mrgn-tp-0 mrgn-bttm-0">Filter your results</h2>
+				</header>		
+				<div class="panel-body">
+				
+				
+				<div class="form-group">	
+				<label for="find">Contains</label>
+				<form>	
+			  	<div class="input-group">
+				<input placeholder="Keywords" class="form-text form-control" type="text" id="find" name="find" value="" size="20"> 
+				<span class="input-group-btn"><a href="#.html" class="btn btn-md btn-default" type="button"><span class="nowrap"> Find</span></a></span>
+				</div>
+				</form>	
+				</div>
+				
+			<!--	<details open="open">
+					<summary>Filter your results</summary>-->
+				<!--	
+					<div class="form-group">
+							<label for="inspection_status">Inspection status</label>
+							<select class="form-control maxwidth" id="inspection_status" name="inspection_status" data-column="2">
+								<option value="">All</option>
+								<option value="completed">Completed</option>	
+								<option value="draft">Draft</option>
+								<option value="disputes">Disputes</option>
+								<option value="scheduled">Scheduled</option>
+							</select>
+					</div>
+				-->	
+					<div class="form-group">
+					<fieldset>
+						<legend><span class="field-name">Inspection status</span></legend>
+						<div class="checkbox">
+							<label for="all">
+								<input type="checkbox" name="inspectionStatus" value="1" id="all" data-rule-required="true" /> All <span class="mrgn-lft-sm badge">400</span></label>
+						</div>
+						<div class="checkbox">
+							<label for="completed"><input type="checkbox" name="inspectionStatus" value="2" id="completed" /> Completed <span class="mrgn-lft-sm badge">390</span></label>
+						</div>
+						<div class="checkbox">
+							<label for="draft"><input type="checkbox" name="inspectionStatus" value="3" id="draft" /> Draft <span class="mrgn-lft-sm badge">1</span></label>
+						</div>
+						<div class="checkbox">
+							<label for="disputes"><input type="checkbox" name="inspectionStatus" value="4" id="disputes" /> Disputes <span class="mrgn-lft-sm badge">9</span></label>
+						</div>
+					</fieldset>
+					</div>
+					
+					<div class="form-group">
+							<label for="utility">Utility</label>
+							<select class="form-control" id="utility" name="utility">
+								<option value="">All</option>
+								<option value="Oshawa">Oshawa PUC Networks Inc</option>
+							</select>
+					</div>
+					<div class="form-group">
+							<label for="installation_number">Installation number</label> 
+							<input class="form-control" id="installation_number" name="installation_number" type="text" required="required" size="50">
+					</div>
+					<div class="form-group">
+							<label for="certificate_number">Certificate number</label> 
+							<input class="form-control" id="certificate_number" name="certificate_number" type="text" required="required" size="50">
+					</div>
+					<div class="form-group">
+							<label for="year">Year</label>
+							<select class="form-control" id="year" name="year">
+								<option value="">All</option>
+								<option value="2022">2022</option>	
+								<option value="2021">2021</option>
+								<option value="2020">2020</option>
+								<option value="2019">2019</option>
+							</select>
+					</div>
+					
+					<div class="form-group">
+							<label for="month">Month</label>
+							<select class="form-control" id="month" name="month">
+								<option value="">All</option>
+								<option value="January">January</option>	
+								<option value="February">February</option>
+								<option value="March">March</option>
+								<option value="April">April</option>
+								<option value="May">May</option>
+								<option value="June">June</option>	
+								<option value="July">July</option>
+								<option value="August">August</option>
+								<option value="September">September</option>
+								<option value="October">October</option>
+								<option value="November">November</option>
+								<option value="December">December</option>
+							</select>
+					</div>
+				
+				<div class="form-group mrgn-bttm-sm">	
+				<button type="button" class="btn btn-default" onclick="MM_goToURL('parent','001-SL-mceg-inspection-01-installation-en.html');return document.MM_returnValue">Apply filters</button> 		
+				<button type="button" class="btn btn-primary" onclick="MM_goToURL('parent','001-SL-mceg-inspection-01-certificate-01-en.html');return document.MM_returnValue">Reset filters</button> 
+				</div>	
+					
+				<!--</details>-->
+					
+				</div>				
+				</div>	
+
+		</div>
+		<div class="col-md-9">
+		<h2 class="mrgn-tp-0 wb-inv">Search results</h2>	
+			
+			<div class="small mrgn-tp-md mrgn-bttm-sm">
+				<span id="dataset-filter_filter" class="dataTables_filter"><label>Filter items&nbsp;<input type="search" class="" placeholder="" aria-controls="dataset-filter"></label></span>
+				
+				<span class="dataTables_info" id="dataset-filter_info" role="status" aria-live="polite">Showing 1 to 10 of 100 entries</span>
+				<span class="dataTables_length" id="dataset-filter_length"><label>Show <select name="dataset-filter_length" aria-controls="dataset-filter" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></span>
+			</div>
+			
+			<table class="wb-tables table table-hover table-striped dataTable no-footer" data-wb-tables="{ "Paginate": true, "Filter": true, "Info": true, "Sort": false }" id="wb-auto-2" aria-describedby="wb-auto-2_info" role="grid">
+        	<thead>
+    		<tr role="row">
+			<th id="view-title-table-column" class="sorting_disabled" rowspan="1" colspan="1" style="width: 831.5px;">Inspections<span class="sorting-cnt"><span class="sorting-icons"></span></span></th>
+			</tr>
+    		</thead>
+    		<tbody>
+			<tr role="row">
+            <td>
+			<div>
+				<span><b>E24 - Inspection certificate: #######</b><a href="#.html" class=""><i class="mrgn-lft-sm fas fa-edit" title="Edit - Inspection certificate: #######"></i></a><a href="#.html" class="mrgn-lft-sm"><i class="far fa-clone"></i></a><a href="#.html" class="mrgn-lft-sm"><i class="fas fa-download"></i></a>
+				</span>
+			</div>
+			<!--<span class="mckhub-link"><a href="https://mckhub-dev.apps.ocp.dev.ised-isde.canada.ca/measurement-canada-knowledge-hub/en/link/gen-48-examination-sticker-placement" target="_blank" hreflang="en">GEN-48—Examination sticker placement</a> <i class="fa fa-clipboard" title="Copy link"></i></span>
+			<p>This bulletin applies to devices examined under the&nbsp;<a href="http://laws.justice.gc.ca/eng/acts/W-6/index.html">Weights and Measures Act</a>.</p>-->
+			<div class="mrgn-tp-sm">
+			<div><b>Date:</b> 2021-07-01 10:00 AM PT</div>
+			<div class="mrgn-tp-sm"><b>Utility:</b> Oshawa PUC Networks Inc, 100 Simcoe Street South, Oshawa, Ontario L1H 7M7</div>
+			<div class="mrgn-tp-sm"><b>Customer:</b> 1900 Simcoe Street LTD, 1900 Simcoe Street, Oshawa, Ontario L1H 7M7</div>
+			<div class="mrgn-tp-sm"><b>District:</b> Oshawa</div>
+			<div class="mrgn-tp-sm"><b>Inspection location:</b> 1900 Simcoe Street, Oshawa, Ontario L1H 7M7</div>	
+			<div class="mrgn-tp-sm"><b>Status:</b> Completed</div>	
+			<!--<p><b>Actions:</b> Clone or View</p>	-->
+			<div class="mrgn-tp-sm"><b>Revision history:</b> 2021-10-11<!-- <a href="#.html" class=""><i class="mrgn-lft-sm fas fa-edit" title="Edit - Inspection certificate: #######"></i></a><a href="#.html" class="mrgn-lft-sm"><i class="far fa-clone"></i></a><a href="#.html" class="mrgn-lft-sm"><i class="fas fa-download"></i></a>--></div>	
+			</div>		
+			</td>
+          	</tr>
+				
+			</tbody>
+			</table>	
+			
+		<!--<div class="panel panel-default mrgn-bttm-0">
+			<div class="panel-body">	
+			<h2 class="h5 mrgn-tp-0">Project name</h2>
+			
+				
+				
+			<div class="panel panel-primary mrgn-bttm-0">
+					  <header class="panel-heading">
+					   <h4 class="panel-title">Province/territory</h4>
+					  </header>
+					  <div class="panel-body">
+					   
+						<div class="row">
+							
+						<div class="col-md-4">
+						<div class="panel panel-default mrgn-bttm-0">
+						  <header class="panel-heading">
+						   <h5 class="panel-title">Program</h5>
+						  </header>
+						  <div class="panel-body">
+							  	<p><a href="#.html" title="Program name - opens in new window">Program name</a></p>
+						  </div>
+						</div>
+						</div>
+						<div class="col-md-4">
+						<div class="panel panel-default mrgn-bttm-0">
+						  <header class="panel-heading">
+						   <h5 class="panel-title">Funding</h5>
+						  </header>
+						  <div class="panel-body">
+								<p>data</p>
+						  </div>
+						</div>
+						</div>	
+						<div class="col-md-4">
+						<div class="panel panel-default mrgn-bttm-0">
+						  <header class="panel-heading">
+						   <h5 class="panel-title">Project stage</h5>
+						  </header>
+						  <div class="panel-body">
+								<p>data</p>
+						  </div>
+						</div>
+						</div>	
+						</div>
+						  
+				
+				</div>
+			</div>
+			</div>	  
+				
+			</div>-->	
+		
+		</div>
+	</div>
+</div>	
+	
+  
+  <!-- Page content END -->
+  <div id="def-preFooter"> 
+    <!-- Write closure fall-back static file --> 
+    <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/preFooter-en.html --> 
+  </div>
+  <!-- Write closure template --> 
+  <script>
+				var defPreFooter = document.getElementById("def-preFooter");
+				defPreFooter.outerHTML = wet.builder.preFooter({
+						"dateModified": "2021-08-27",
+                        "showShare":  false,
+				        "showFeedback": false
+				});
+			</script> 
+</main>
+<div id="def-footer"> 
+  <!-- Write closure fall-back static file --> 
+  <!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/appFooter-en.html --> 
+</div>
+<!-- Write closure template --> 
+<script>
+			var defFooter = document.getElementById("def-footer");
+			defFooter.outerHTML = wet.builder.appFooter({
+				"showFeatures": false
+			});
+		</script> 
+<!-- Write closure template --> 
+<script>
+			document.write(wet.builder.refFooter({
+				"isApplication": true
+			}));
+		</script>
+</body>
+</html>
